@@ -1,0 +1,128 @@
+body{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+header {
+    background-color: #333;
+    padding: 30px;
+    color: #fff;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 검색 영역을 오른쪽 끝으로 이동 */
+    border-bottom: 50px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.search-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+
+#search-box {
+    border: none;
+    padding: 5px;
+    background: transparent;
+}
+
+#search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+main{
+    background-color: white;
+}
+.dashboard{
+    padding: 30px;
+    height:400px;
+    background-color: #333;
+}
+
+.dashboard-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.dashboard-buttons {
+    text-align: left;
+}
+
+.dashboard-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.dashboard-buttons button.active {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.content-list {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+}
+ul{
+    padding: 0px;
+}
+.content-item {
+    list-style: none; /* li 태그의 점 제거 */
+    border-bottom: 1px solid #ccc; /* 회색 선으로 각 글 구분 */
+    padding: 20px 50px;
+    background-color: #fff;
+}
+.content-item__title{
+    text-align: left;
+}
+.content-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-item h2 {
+    width: 100%;
+    font-weight: bold;
+}
+.content-item i{
+    padding-left: 15px;
+}
+.company {
+    display: flex;
+    align-items: center;
+}
+
+.company img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.date-views-likes {
+    display: flex;
+    align-items: center;
+}
+
+.date-views-likes i {
+    margin-right: 5px;
+}
+
+.heart-filled {
+    color: #CF483D;
+}
+.content-item span{
+    color: gray;
+}
