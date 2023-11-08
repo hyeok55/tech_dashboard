@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- 1. 문서 버전 -->
+<html lang="ko"> <!-- 2. 시용 언어 -->
+{% load static %}
+
+<head> <!-- 3. 문서의 정보 -->
+    <meta charset="UTF-8">
+    <title>techblog_dashboard</title>
+    <meta name="description" content="문서설명">
+    <meta name="author" content="programmers_devcourse_Teamproject1_Team1-2">
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <script src="{% static 'home.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header> <!-- 4. 페이지의 주요 정보 -->
+        <div class="logo">
+            <img id="logo" src="{% static './icons/company_logo.png' %}" alt="회사 로고" onclick="tohome()">
+        </div>
+        <div class="search">
+            <form class="search-input" method="post" id="searchForm">
+                {% csrf_token %}
+                <input type="text" name="search-box">
+                <span id="search-icon" style="cursor: pointer;">&#128269;</span>
+            </form>
+        </div>
+
+        <div class="search">
+            <div class="search-input">
+                <span id="search-icon">&#128269;</span>
+                <input type="text" id="search-box" placeholder="Search">
+            </div>
+        </div>
+    </header>
+
+    <main> <!-- 5. 페이지의 주요 콘텐츠 -->
+        <section class="dashboard">
+            <div class="dashboard-title">
+                <h1>IT 직군 트렌드 분석</h1>
+            </div>
+            <div class="dashboard-buttons">
+                <button id="all-button" class="active">전체</button>
+                <button id="company-button">기업별</button>
+                <div id="chart-container"></div>
+            </div>
+        </section>
+        <section class="content-list">
+            {% if postings %}
+            <ul>
+                {% for posting in postings %}
+                <li class="content-item">
+                    <a href="#" class=".post-link" , onclick="openExternalURL('{{ posting.pk }}', '{{ posting.url }}')">
+                        <h2 class="content-item__title">{{posting.title}}</h2>
+                    </a>
+                    {% if posting.tag_list %}
+                    <div class="tags">
+                        {% for tag in posting.tag_list %}
+                        <div class="tag-oval">{{tag.tag__tag_name}}</div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <div class="content-details">
+                        <div class="company">
+                            <img src="{% static './icons/company/'|add:posting.company__company_name|add:'.png' %}"
+                                alt="{{posting.company__company_name}}">
+                            <span>{{posting.company__company_name}}</span>
+                        </div>
+                        <div class="date-views-likes">
+                            <span>{{posting.date}}</span>
+                            <i class="fas fa-eye"></i>
+                            <span>{{posting.views}}</span>
+                            <div class="icon-container">
+                                {% if posting.was_liked == "False" %}
+                                <i class="fa-regular fa-heart heart-filled" id="{{ posting.pk }}" onclick="increaseLike('{{ posting.pk }}')"></i>
+                                {% else %}
+                                <i class="fa-solid fa-heart heart-filled" id="{{ posting.pk }}" onclick="increaseLike('{{ posting.pk }}')"></i>
+                                {% endif %}
+                            </div>
+                            <span class="heart-text">{{posting.likes}}</span>
+                            
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <h2> 검색된 글이 없습니다.</h2>
+            <br>
+            <p>올바른 회사이름이나 태그 이름으로 검색해주세요.</p>
+            {% endif %}
+        </section>
+
+    </main>
+
+    <footer> <!-- 6. 페이지의 부가적인 정보 -->
+    </footer>
+
+</body>
+
+</html>
+<script>
+    function tohome(){
+        window.open("http://127.0.0.1:8000/techs/", '_self');
+    }
+    function openExternalURL(pk, url) {
+        window.open(url, '_blank');
+        window.open("http://127.0.0.1:8000/techs/updateview/" + String(pk), '_self');
+    }
+    function increaseLike(pk) {
+        var icon = document.getElementById(pk);
+        if (icon.classList.contains('fa-regular')) {
+        icon.classList.remove('fa-regular');
+        icon.classList.add('fa-solid');
+        window.open("http://127.0.0.1:8000/techs/updatelike/" + String(pk), '_self');
+        } else {
+            alert("이미 좋아요를 누른 게시글입니다.");
+        }
+    }
+</script>
