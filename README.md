@@ -1,10 +1,12 @@
 # DEV Project1
 Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 
+------------
+
 #Demo video
-<iframe width="956" height="538" src="https://www.youtube.com/watch?v=jOTfBlKSQYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![SeeNear](https://user-images.githubusercontent.com/54880474/229173623-2b5241ae-dc6c-488f-8b63-a9108537ed76.jpg)](https://youtu.be/eu4VRWWW2r4)  
 
-
+------------
 
 # 목차
 - [개발 환경](#개발-환경)
@@ -17,6 +19,8 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 - [E-R 다이어그램](#e-r-다이어그램)
 - [프로젝트 목적](#프로젝트-목적)
 - [핵심 기능](#핵심-기능)
+
+------------
 
 ## 개발 환경
 - GitHub
