@@ -1,0 +1,32 @@
+body {
+    padding: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 30px;
+    color: #333;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 50px;
+}
+
+main {
+    border: 5px solid grey;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+li{
+    white-space: pre-line;
+}
+.error-messages {
+    color: red;
+    list-style-type: none; /* Remove bullet points from list items */
+}

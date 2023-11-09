@@ -26,19 +26,17 @@
         <div class="logo">
             <img id="logo" src="{% static './icons/company_logo.png' %}" alt="회사 로고" onclick="tohome()">
         </div>
+
+        <div class="login">
+            <a id="loginbtn" href="{% url 'login' %}">로그인
+            </a>
+        </div>
         <div class="search">
             <form class="search-input" method="post" id="searchForm">
                 {% csrf_token %}
-                <input type="text" name="search-box">
                 <span id="search-icon" style="cursor: pointer;">&#128269;</span>
+                <input type="text" id="search-box" name="user_input" placeholder="Search">
             </form>
-        </div>
-
-        <div class="search">
-            <div class="search-input">
-                <span id="search-icon">&#128269;</span>
-                <input type="text" id="search-box" placeholder="Search">
-            </div>
         </div>
     </header>
 

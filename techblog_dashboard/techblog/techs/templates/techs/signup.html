@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- 1. 문서 버전 -->
+<html lang="ko"> <!-- 2. 시용 언어 -->
+{% load static %}
+
+<head> <!-- 3. 문서의 정보 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}">
+</head>
+<body>
+    <header> <!-- 4. 페이지의 주요 정보 -->
+        <h1>회원가입</h1>
+    </header>
+
+    <main> <!-- 5. 페이지의 주요 콘텐츠 -->
+        <section class="signup">
+            {% if error_messages %}
+            <div class="error-messages">
+                <ul>
+                    {% for message in error_messages %}
+                        <li color="red" style="white-space: pre-line">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
