@@ -177,18 +177,16 @@ def save_csv_to_model(request):
                         tag=tag_instance,
                     )
 
-            #4. Company_Tag 테이블 
-            #인스턴스를 통째로 조회해서 넣자
-
-            # if not is_duplicate_company_name: #삽입
-            #     Company_Tag.objects.create(
-            #         company=company_instance
-            #         tag=
-            #         count,
-            #         update
-            #     )
-            # else:#갱신
-            #     pass
+                    company_tag, created = Company_Tag.objects.get_or_create(
+                        company=company_instance,
+                        tag=tag_instance,
+                        defaults={'updates': datetime.now()}
+                    )
+                    
+                    if not created:
+                        company_tag.updates = datetime.now()
+                        company_tag.count += 1
+                        company_tag.save()
     return HttpResponse("CSV 파일을 처리했습니다.")
 
 def all_chart(request):
