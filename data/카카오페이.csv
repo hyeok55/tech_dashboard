@@ -1,0 +1,56 @@
+title,date,tags,company,link
+"카카오페이 기술 블로그 월 평균 방문자 수 10,000명을 넘기까지",2023.11.06,developer relations,카카오페이,https://tech.kakaopay.com//post/kakaopay-techlog-2/
+멀고도 험난했던 개발 지원이 중단된 Library 연동 과정,2023.10.24,be#legacy,카카오페이,https://tech.kakaopay.com//post/how-to-work-with-legacy-library/
+내 주변 송금이 블루투스로 만들어졌다고?,2023.10.13,ios#andorid#bluetooth,카카오페이,https://tech.kakaopay.com//post/bluetooth-remittance/
+Spring Batch 애플리케이션 성능 향상을 위한 주요 팁,2023.09.05,be#spring batch,카카오페이,https://tech.kakaopay.com//post/spring-batch-performance/
+카카오페이 기술 블로그는 어떻게 만들었을까요?,2023.09.04,fe#astro#gatsby,카카오페이,https://tech.kakaopay.com//post/kakaopay-techlog/
+실무에서 적용하는 테스트 코드 작성 방법과 노하우 Part 2: 테스트 코드로부터 피드백 받기,2023.08.28,be#test code,카카오페이,https://tech.kakaopay.com//post/mock-test-code-part-2/
+Kotlin으로 Spring AOP 극복하기!,2023.08.16,be#spring#kotlin#aop,카카오페이,https://tech.kakaopay.com//post/overcome-spring-aop-with-kotlin/
+카카오페이만의 AB 테스트 서비스를 만든 이유,2023.08.11,be#a/b test,카카오페이,https://tech.kakaopay.com//post/kakaopay-growth-platform-abtest/
+내가 언제까지 IT업계에서 일할 수 있을까?,2023.08.07,정보관리기술사,카카오페이,https://tech.kakaopay.com//post/professional-engineer-information-management-james/
+"어서 와, ㅋㅍㄱㅍ는 처음이지?",2023.08.02,developer relations,카카오페이,https://tech.kakaopay.com//post/2023-july-kakaopay-developer-festival/
+실무에서 적용하는 테스트 코드 작성 방법과 노하우 Part 1: 효율적인 Mock Test,2023.07.10,be#test code,카카오페이,https://tech.kakaopay.com//post/mock-test-code/
+배포 효율화를 위한 자동화 슬랙봇 개발,2023.06.09,sre#automation,카카오페이,https://tech.kakaopay.com//post/slack-bot-improving-operational-efficiency/
+"Spring Bean Injection 이야기(feat. 모두가 다 알고 있는 스프링빈, 정말 다 알고 있는가?)",2023.05.31,be#spring,카카오페이,https://tech.kakaopay.com//post/martin-dev-honey-tip-2/
+"개발자가 업무 외에 회사에 기여할 수 있는 방법(feat. 척척박사 봇, 카카오페이 용어집)",2023.05.24,slackbot,카카오페이,https://tech.kakaopay.com//post/dictionary-bot/
+Spring 기반 OAuth 2.1 Authorization Server 개발 찍먹해보기,2023.05.22,be#oauth,카카오페이,https://tech.kakaopay.com//post/spring-oauth2-authorization-server-practice/
+복잡한 문제는 나눠서 단순화: 카카오페이 위키 마이그레이션 되돌아보기,2023.04.25,위키,카카오페이,https://tech.kakaopay.com//post/wiki-migration-review/
+"변수명..변수명이 떠오르지 않아! - ""너의 변수명은."" 챗봇 개발 일지",2023.03.23,slackbot#변수명,카카오페이,https://tech.kakaopay.com//post/variable-name-bot-haero-sery-bread/
+이벤트 드리븐 적재적소에 사용하기,2023.03.21,이벤트 드리븐#be,카카오페이,https://tech.kakaopay.com//post/event-driven-architecture/
+중요한 건 꺾이지 않는 테스트: 카카오페이 지라 마이그레이션 되돌아보기,2023.03.17,jira,카카오페이,https://tech.kakaopay.com//post/jira-migration-review/
+5분 만에 배우는 일정 관리 슬랙봇 만드는 방법,2023.03.17,slackbot#oauth#be,카카오페이,https://tech.kakaopay.com//post/slack-google-integration/
+카카오페이 크루들의 회의를 책임지는 죠르디 봇을 소개합니다.,2023.03.14,slackbot,카카오페이,https://tech.kakaopay.com//post/pay-meeting-bot-story/
+Jackson Deserializer 코드 분석해보기,2023.03.09,spring#jackson#deserializer#be,카카오페이,https://tech.kakaopay.com//post/martin-dev-honey-tip-1/
+슬랙봇 이모티콘 제작소 개발 그 뒷이야기!!,2023.03.03,slackbot#be,카카오페이,https://tech.kakaopay.com//post/lily-slack-emojibot/
+"""if(kakao) 발표 어땠어요?"" 신선한 if(kakao) 인터뷰!",2023.02.09,if kakao#ios#be,카카오페이,https://tech.kakaopay.com//post/benny-cado-2022-ifkakao-presentation/
+ㅋㅍㄱㅍ(카카오페이 개발자 페스티벌) 진행 과정 엿보기,2023.02.03,developer relations,카카오페이,https://tech.kakaopay.com//post/2023-jan-kakaopay-developer-festival/
+카카오페이의 고객분석 플랫폼 CXM 소개,2023.01.30,cxm#data,카카오페이,https://tech.kakaopay.com//post/bella-cmx-platform-segmentation/
+AWS re:Invent 2022 참관기,2023.01.27,re:invent,카카오페이,https://tech.kakaopay.com//post/2022-aws-reinvent/
+카카오페이 서버 개발자로 일한다는 것 (feat. 연진아 나 지금 되게 신나),2023.01.27,if kakao#be#스터디,카카오페이,https://tech.kakaopay.com//post/happy-server-engineer/
+주니어 FE 개발자들의 스터디 여정,2022.12.29,fe,카카오페이,https://tech.kakaopay.com//post/frontend-study-journey/
+카카오페이 if(kakao) 발표 준비 과정 엿보기,2022.12.15,developer relations#if kakao,카카오페이,https://tech.kakaopay.com//post/ifkakao2022-kakaopay-dr-02/
+[if kakao 2022] Batch Performance를 고려한 최선의 Aggregation,2022.12.09,if kakao#spring batch#be,카카오페이,https://tech.kakaopay.com//post/ifkakao2022-batch-performance-aggregation/
+[if kakao 2022] Batch Performance를 고려한 최선의 Reader,2022.12.09,if kakao#spring batch#be,카카오페이,https://tech.kakaopay.com//post/ifkakao2022-batch-performance-read/
+[if kakao 2022] 사례로 보는 모바일 자동화 테스트를 통한 모니터링,2022.12.09,qa#mobile#if kakao,카카오페이,https://tech.kakaopay.com//post/ifkakao2022-mobile-automation-test-monitoring/
+"[if kakao 2022] 카카오페이 iOS 웹뷰 소개, 그리고 세션에서 못다한 이야기",2022.12.08,ios#webview#fe#jsapi#if kakao,카카오페이,https://tech.kakaopay.com//post/ifkakao2022-ios-webview/
+[if kakao 2022] ML 모델 학습 파이프라인 설계 (feat. MLOps 플랫폼),2022.12.08,mlops#sagemaker#if kakao,카카오페이,https://tech.kakaopay.com//post/ifkakao2022-mlops-model-training-pipeline/
+카카오페이 계정 토큰 시스템 개편기. 그런데 Swift Concurrency를 사용한...,2022.11.24,ios#oauth,카카오페이,https://tech.kakaopay.com//post/account-token-swift-concurrency/
+모두를 위한 접근성 이야기,2022.11.17,ux#accessibility#fe,카카오페이,https://tech.kakaopay.com//post/accessibility-stories-for-everyone/
+주니어 개발자의 오픈소스 활동 이야기,2022.11.03,open source#be,카카오페이,https://tech.kakaopay.com//post/junior-opensource/
+카카오페이 성장과 함께 하는 기술지원 직무를 소개합니다.,2022.10.27,기술지원#technical account manager,카카오페이,https://tech.kakaopay.com//post/tam-introduction/
+재택근무 환경에서 효율적인 코드 리뷰 방법: 팀 그라운드 룰 정하기,2022.10.06,code review#developer relations,카카오페이,https://tech.kakaopay.com//post/remote-work-code-review/
+WebFlux와 코루틴으로 BFF(Backend For Frontend) 구현하기,2022.09.26,be#msa#webflux#coroutine,카카오페이,https://tech.kakaopay.com//post/bff_webflux_coroutine/
+카카오페이 Developer Relations 활동 엿보기,2022.09.06,developer relations#onboarding,카카오페이,https://tech.kakaopay.com//post/kakaopay-dr-01/
+"이미지 처리를 위한 파이썬 서버 프레임워크 선정기 with Django, FastAPI, Sanic",2022.08.29,image processing server#fastapi#django#sanic#be,카카오페이,https://tech.kakaopay.com//post/image-processing-server-framework/
+OpenAPI Specification을 이용한 더욱 효과적인 API 문서화,2022.08.22,swagger#spring rest docs#be,카카오페이,https://tech.kakaopay.com//post/openapi-documentation/
+모델 서빙 최적화를 위한 프레임워크 선정과 서빙 성능 극대화하기,2022.08.11,machine learning,카카오페이,https://tech.kakaopay.com//post/model-serving-framework/
+카카오페이 주니어 서버 개발자의 이모저모,2022.07.26,onboarding#be,카카오페이,https://tech.kakaopay.com//post/marketing-junior-developer/
+React Query와 함께 Concurrent UI Pattern을 도입하는 방법,2022.07.11,react#fe,카카오페이,https://tech.kakaopay.com//post/react-query-2/
+쮸니어 안드로이드 개발자의 카카오페이 입사 후 적응기,2022.06.23,andorid#onboarding,카카오페이,https://tech.kakaopay.com//post/junior-android-developer/
+카카오페이 iOS 개발자의 채용 과제 서버 개발기 with Vapor,2022.06.17,ios,카카오페이,https://tech.kakaopay.com//post/ios-assignment-vapor/
+무조건 스켈레톤 화면을 보여주는게 사용자 경험에 도움이 될까요?,2022.05.30,ux#react#fe,카카오페이,https://tech.kakaopay.com//post/skeleton-ui-idea/
+MSA 환경에서 네트워크 예외를 잘 다루는 방법,2022.05.25,be,카카오페이,https://tech.kakaopay.com//post/msa-transaction/
+React 18: 리액트 서버 컴포넌트 준비하기,2022.05.20,react#fe,카카오페이,https://tech.kakaopay.com//post/react-server-components/
+Sentry로 우아하게 프론트엔드 에러 추적하기,2022.05.18,if kakao#fe#sentry,카카오페이,https://tech.kakaopay.com//post/frontend-sentry-monitoring/
+카카오페이 프론트엔드 개발자들이 React Query를 선택한 이유,2022.05.10,react#fe,카카오페이,https://tech.kakaopay.com//post/react-query-1/
+"카카오페이 유저 프로파일링, 페이프로파일",2022.05.03,mydata#data,카카오페이,https://tech.kakaopay.com//post/pay-profile/

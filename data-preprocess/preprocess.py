@@ -158,4 +158,5 @@ df["tags"] = df["tags"].apply(replace_tag)
 df["date"] = df["date"].apply(replace_date)
 
 # csv 파일로 저장
-df.to_csv("../data/total_data.csv", index=False)
+for company in df["company"].unique():
+    df.loc[df["company"] == company].to_csv(f"../data/{company}.csv", index=False)
