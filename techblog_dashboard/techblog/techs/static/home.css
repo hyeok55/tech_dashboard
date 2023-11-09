@@ -12,32 +12,48 @@ header {
     padding: 30px;
     color: #fff;
     height: 20px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* 검색 영역을 오른쪽 끝으로 이동 */
     border-bottom: 50px;
+    overflow: hidden;
 }
-a {
-    text-decoration : none;
-    color: black;
+.logo {
+    float: left;
 }
-a:visited { 
-    text-decoration: none; 
-    text-decoration-color: black;
-}
-a:hover { 
-    text-decoration: underline;
+
+.login {
+    float: right;
+    padding-left : 30px;
+    font-weight: bold;
 }
 
 .logo img {
     max-height: 40px;
     vertical-align: middle;
 }
-
+#loginbtn{
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration : none;
+    color: white;
+}
+#loginbtn:visited { 
+    text-decoration: none; 
+    text-decoration-color: white;
+}
+#loginbtn:hover {
+    border-radius: 40%;
+    box-shadow: 0 0 12px rgba(30, 58, 138, 0.8), 0 0 20px rgba(99, 127, 203, 0.4), 0 0 30px rgba(30, 58, 138, 0.4);
+    text-align: center;
+    border: none;
+    color :whitesmoke;
+}
+.search {
+    float: right;
+}
 .search-input {
     position: relative;
-    display: flex;
     align-items: center;
     border-bottom: 2px solid #fff;
 }
@@ -56,6 +72,17 @@ a:hover {
 
 main {
     background-color: white;
+}
+main a{
+    text-decoration : none;
+    color: black;
+}
+main a:visited{
+    text-decoration: none; 
+    text-decoration-color: black;
+}
+main a:hover { 
+    text-decoration: underline;
 }
 
 .dashboard {

@@ -17,19 +17,17 @@
         <div class="logo">
             <img id="logo" src="{% static './icons/company_logo.png' %}" alt="회사 로고" onclick="tohome()">
         </div>
+
+        <div class="login">
+            <a id="loginbtn" href="{% url 'login' %}">로그인
+            </a>
+        </div>
         <div class="search">
             <form class="search-input" method="post" id="searchForm">
                 {% csrf_token %}
-                <input type="text" name="search-box">
                 <span id="search-icon" style="cursor: pointer;">&#128269;</span>
+                <input type="text" id="search-box" name="user_input" placeholder="Search">
             </form>
-        </div>
-
-        <div class="search">
-            <div class="search-input">
-                <span id="search-icon">&#128269;</span>
-                <input type="text" id="search-box" placeholder="Search">
-            </div>
         </div>
     </header>
 
@@ -41,7 +39,18 @@
             <div class="dashboard-buttons">
                 <button id="all-button" class="active">전체</button>
                 <button id="company-button">기업별</button>
-                <div id="chart-container"></div>
+
+                <div id="chart-container">
+                    {% if companies %}
+                    <div class="company-list">
+                        {% for company in companies%}
+                        <button id="sokka-button">{{company.company_name}}</button>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <p>기업이 없습니다.</p>
+                    {% endif %}
+                </div>
             </div>
         </section>
         <section class="content-list">

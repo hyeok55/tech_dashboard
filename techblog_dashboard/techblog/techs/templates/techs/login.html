@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- 1. 문서 버전 -->
+<html lang="ko"> <!-- 2. 시용 언어 -->
+{% load static %}
+
+<head> <!-- 3. 문서의 정보 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+</head>
+<body>
+    <header> <!-- 4. 페이지의 주요 정보 -->
+        <h1>Login</h1>
+    </header>
+
+    <main> <!-- 5. 페이지의 주요 콘텐츠 -->
+        <section class="login">
+            {% if error_message %}
+                <p>{{ error_message }}</p>
+            {% endif %}
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+</body>
+</html>
