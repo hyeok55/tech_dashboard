@@ -1,4 +1,4 @@
-title,date,tags,company,link
+﻿title,date,tags,company,link
 공지 : 'LY Corporation Tech Blog'로 이사했습니다.,2023.10.02,,라인,https://engineering.linecorp.com/ko/blog/LY-Corporation-Tech-Blog/
 더욱 견고해진 LINE의 오픈소스 관리: OpenChain 인증과 그 뒷이야기를 소개합니다,2023.08.25,open source,라인,https://engineering.linecorp.com/ko/blog/line-achieves-openchain-isoiec-5230-certification/
 HiveQL을 Spark SQL로 이전 시 발생하는 문제 해결하기,2023.08.23,data/ai,라인,https://engineering.linecorp.com/ko/blog/from-hiveql-to-sparksql-troubleshooting/

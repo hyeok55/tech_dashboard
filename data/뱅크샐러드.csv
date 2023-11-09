@@ -1,4 +1,4 @@
-title,date,tags,company,link
+﻿title,date,tags,company,link
 뱅크샐러드 Go 코딩 컨벤션,2023.09.06,golang#go,뱅크샐러드,https://blog.banksalad.com/tech/go-best-practice-in-banksalad/
 사용법과 함께 작성해본 좌충우돌 AWS DMS 사용기 - feat. RDS 통합 이야기,2023.07.19,devops#aws#dms#rds,뱅크샐러드,https://blog.banksalad.com/tech/dms/
 "점점 커지는 RDB Table, S3로 귀양 보내고 Athena로 불러오기 - feat. Optimization with Spark Bucketing",2023.06.08,spark#athena#data#bucketing,뱅크샐러드,https://blog.banksalad.com/tech/data-optimization-with-bucketing/

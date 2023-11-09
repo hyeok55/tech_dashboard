@@ -2,6 +2,8 @@ import pickle
 import os
 import pandas as pd
 from tag_dictionary import tag_dict
+from string import punctuation
+import re
 
 def replace_tag(ls):
     """
@@ -159,4 +161,4 @@ df["date"] = df["date"].apply(replace_date)
 
 # csv 파일로 저장
 for company in df["company"].unique():
-    df.loc[df["company"] == company].to_csv(f"../data/{company}.csv", index=False)
+    df.loc[df["company"] == company].to_csv(f"../data/{company}.csv", index=False, encoding = 'utf-8-sig')
