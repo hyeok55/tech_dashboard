@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 from django.db.models import F
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, JsonResponse
+from .visualization import *
 import csv
 
 def read_csv(file_name):
@@ -90,3 +91,16 @@ def increaselikes(request, Post_id):
     post.likes += 1  # 'view' 필드 값 1 증가
     post.save()  # 변경 사항 저장
     return redirect('show_all')
+
+
+def all_chart(request):
+    all_tags()
+    return render(request, 'techs/home.html')
+
+def company_chart(request, company):
+    company_tags(company)
+    return render(request, 'techs/home.html')
+
+def company_name(request):
+    select_company = Company.objects.values_list('company_name', flat=True).distinct()
+    return render(request, 'techs/home.html', {'select_company': select_company})
