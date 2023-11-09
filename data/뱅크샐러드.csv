@@ -1,0 +1,37 @@
+title,date,tags,company,link
+뱅크샐러드 Go 코딩 컨벤션,2023.09.06,golang#go,뱅크샐러드,https://blog.banksalad.com/tech/go-best-practice-in-banksalad/
+사용법과 함께 작성해본 좌충우돌 AWS DMS 사용기 - feat. RDS 통합 이야기,2023.07.19,devops#aws#dms#rds,뱅크샐러드,https://blog.banksalad.com/tech/dms/
+"점점 커지는 RDB Table, S3로 귀양 보내고 Athena로 불러오기 - feat. Optimization with Spark Bucketing",2023.06.08,spark#athena#data#bucketing,뱅크샐러드,https://blog.banksalad.com/tech/data-optimization-with-bucketing/
+분석 데이터를 프로덕션에서 쉽게 사용할 수 없을까?,2023.06.07,데이터 서빙#데이터 파이프라인#데이터 플랫폼#documentdb#protobuf#go,뱅크샐러드,https://blog.banksalad.com/tech/dataserving/
+"데이터 분석가가 직접 정의, 배포, 관리하는 뱅크샐러드 데이터 파이프라인",2023.06.05,데이터 파이프라인#데이터 플랫폼#airflow#spark,뱅크샐러드,https://blog.banksalad.com/tech/datapipe/
+"""검색엔진 가이드""를 금융쇼핑 서비스에 SEO로 활용하기",2023.01.05,seo#web,뱅크샐러드,https://blog.banksalad.com/tech/how-banksalad-seo/
+Spark on Kubernetes로 가자!,2023.01.05,emr#spark#kubernetes#docker,뱅크샐러드,https://blog.banksalad.com/tech/spark-on-kubernetes/
+지연 시간 없이 웹폰트 서빙하기 - Feat. Safari & Edge functions,2022.12.13,webfont#preload,뱅크샐러드,https://blog.banksalad.com/tech/font-preload-on-safari/
+뱅크샐러드 Web chapter에서 GitHub Action 기반의 CI 속도를 개선한 방법,2022.08.29,github actions,뱅크샐러드,https://blog.banksalad.com/tech/github-action-npm-cache/
+뱅크샐러드 iOS팀이 숨쉬듯이 테스트코드 짜는 방식 3편 - 스펙별 단위 테스트,2022.05.30,ios#testing#test#testing#test,뱅크샐러드,https://blog.banksalad.com/tech/test-in-banksalad-ios-3/
+뱅크샐러드 iOS팀이 숨쉬듯이 테스트코드 짜는 방식 2편 - 화면 단위 통합 테스트,2022.04.27,ios#testing#test#testing#test,뱅크샐러드,https://blog.banksalad.com/tech/test-in-banksalad-ios-2/
+뱅크샐러드 iOS팀이 숨쉬듯이 테스트코드 짜는 방식 1편 - 통합 UI테스트,2022.04.18,ios#testing#test#testing#test,뱅크샐러드,https://blog.banksalad.com/tech/test-in-banksalad-ios-1/
+뱅크샐러드 안드로이드 앱에서 Koin 걷어내고 Hilt로 마이그레이션하기,2022.04.09,andorid#의존성주입#andorid#di#koin#hilt#dagger#jetpack#협업,뱅크샐러드,https://blog.banksalad.com/tech/migrate-from-koin-to-hilt/
+주니어 엔지니어의 눈으로 본 AWS re:Invent,2022.02.22,data engineer#해외컨퍼런스#라스베가스#usa#내길이아닌가#왜나만못하지#주니어엔지니어#엔지니어#junior#aws#re:invent#conference#organizational culture#테크조직,뱅크샐러드,https://blog.banksalad.com/tech/aws-reinvent-for-junior-engineer/
+마이데이터 프로젝트에서 배운 것들,2022.02.07,mydata#개발문화#문서화#organizational culture#협업#jira#retrospective,뱅크샐러드,https://blog.banksalad.com/tech/what-i-learned-from-mydata-project/
+팀과 함께 성장하는 Engineering Manager의 역할,2021.10.12,manager#manager#engineering manager#1on1#1on1#팀관리#visioning,뱅크샐러드,https://blog.banksalad.com/tech/engineering-manager-role-growth/
+뱅크샐러드 Data Discovery Platform의 시작,2021.09.15,data foundation#data engineering#data#organizational culture#고객임팩트#data foundation#data engineering#data discovery platform#datahub,뱅크샐러드,https://blog.banksalad.com/tech/the-starting-of-datadiscoveryplatform-era-in-banksalad/
+두려움 없이 성장하는 뱅크샐러드,2021.02.15,organizational culture#핵심가치#fearlessness#협업#개발문화#code review#code review#문서#문서화,뱅크샐러드,https://blog.banksalad.com/tech/grow-fearlessly/
+뱅크샐러드의 실험플랫폼 분석 인프라 살펴보기,2021.02.10,a/b test#online controlled experiment#experiment#experiment#experiment platform#experiment platform#experiment,뱅크샐러드,https://blog.banksalad.com/tech/experiment-platform-analysis-architecture/
+Banksalad Product Language는 어떻게 디자인되었나요?,2020.12.03,product language#디자인시스템#product language#design system#bpl#product designer#ux#ui,뱅크샐러드,https://blog.banksalad.com/tech/banksalad-product-language-design/
+코드 리뷰 in 뱅크샐러드 개발 문화,2020.11.24,code review#code review#개발문화,뱅크샐러드,https://blog.banksalad.com/tech/banksalad-code-review-culture/
+"뱅크샐러드의 특별한 스펙, '테크 스펙'",2020.10.26,tech spec#스펙문서#문서화#organizational culture#tech spec#documentation,뱅크샐러드,https://blog.banksalad.com/tech/we-work-by-tech-spec/
+진정한 실험 조직의 탄생,2020.10.07,data foundation#experiment#data#organizational culture#실험문화#고객임팩트#실험조직#experiment#experiment platform#a/b test,뱅크샐러드,https://blog.banksalad.com/tech/birth-of-a-genuine-experiment-organization/
+뱅크샐러드는 어떻게 레거시 서비스를 박살 내는가,2020.09.21,msa#decomposition#legacy#shadowing#diff#dual-write#observability#협업#생산성,뱅크샐러드,https://blog.banksalad.com/tech/how-banksalald-decomposes-legacy-services/
+Banksalad Product Language를 소개합니다,2020.08.14,product language#디자인시스템#협업#ios,뱅크샐러드,https://blog.banksalad.com/tech/banksalad-product-language-ios/
+뱅크샐러드 데이터 조직과 플래닝샵 떠나기,2020.04.21,data foundation#planningshop#workshop#data#okr#retrospective#planning#planningshop,뱅크샐러드,https://blog.banksalad.com/tech/data-foundation-planningshop/
+"React밖에 모르는 당신에게. GatsbyJS한 잔, '채용~'",2020.04.05,blog#gatsby#개츠비#markdown#static page#react#블로그개발#개발기,뱅크샐러드,https://blog.banksalad.com/tech/build-a-website-with-gatsby/
+"매출 손실을 줄여주는 외부링크 관제 Bot, 'URL Checker' 개발기",2020.03.13,web#monitoring#observability#observability#puppeteer#automation#slackbot#slack#bot,뱅크샐러드,https://blog.banksalad.com/tech/url-status-checker/
+하루에 1000번 배포하는 조직 되기,2020.02.29,deploy#배포#chatops#github actions,뱅크샐러드,https://blog.banksalad.com/tech/become-an-organization-that-deploys-1000-times-a-day/
+프로덕션 환경에서 사용하는 golang과 gRPC,2020.02.27,grpc#golang#observability#idl#protobuf#observability#go,뱅크샐러드,https://blog.banksalad.com/tech/production-ready-grpc-in-golang/
+폐쇄망 환경의 배포 시스템 개발기,2020.02.25,폐쇄망#배포#idc#deploy#alice,뱅크샐러드,https://blog.banksalad.com/tech/how-we-have-built-alice/
+"테스트 코드, 안드로이드에서는 어떻게 작성해야 할까?",2020.02.20,andorid#testing#test#testing#test,뱅크샐러드,https://blog.banksalad.com/tech/test-in-banksalad-android/
+AWS re:Invent 2019 견문록,2019.12.10,aws#re:invent,뱅크샐러드,https://blog.banksalad.com/tech/aws-reinvent-2019/
+PyCon KR 2019 뱅크샐러드 돌아보기,2019.08.26,pycon#pycon,뱅크샐러드,https://blog.banksalad.com/tech/pycon19/
+뱅크샐러드 at Apple Store,2018.12.28,apple#mocking,뱅크샐러드,https://blog.banksalad.com/tech/banksalad-at-apple-store/
+Typescript로 Local Storage 안전하게 사용하기,2017.08.03,typescript#local storage#web#front end,뱅크샐러드,https://blog.banksalad.com/tech/typescript-local-storage/

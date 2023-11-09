@@ -1,0 +1,38 @@
+title,date,tags,company,link
+Redis 서비스를 만들어가는 QA Engineer의 기록,2023.03.13,kakao enterprise#kakao i cloud#qa#qa engineer#quality assurance#redis#test process#kakao#kakao i cloud#cloud,카카오엔터프라이즈,https://tech.kakaoenterprise.com/183
+워크서버개발팀의 GitHub Actions 적용기,2023.02.27,ci#ci#custom actions#github#github actions#kakao enterprise#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/180
+카카오워크 음성채팅 웹 개발기,2023.02.08,front end#kakao enterprise#rxjs#svelte#webrtc#webview#reactive-programming#카카오워크,카카오엔터프라이즈,https://tech.kakaoenterprise.com/179
+대화 속에 드러나는 감정을 분석해드립니다!,2022.09.28,emotion#emotionrecognition#kakao enterprise#nlp#감정분석#대화분석#외개인아가#일상대화#chatbot#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/157
+실전 Infinite Scroll with React,2022.07.11,front end#intersection observer api#kakao enterprise#react#react query#scroll event#리액트#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/149
+카카오엔터프라이즈 탐방기! (비전편),2022.06.29,ai lab#ai research#ai vision#kakao enterprise#무인상점#워크스루#카카오 i 시각엔진#kakao enterprise#카카오엔터프라이즈 기술블로그#카카오워크,카카오엔터프라이즈,https://tech.kakaoenterprise.com/148
+우리는 클라우드 개발에 진심입니다! - SmartNIC 편,2022.04.05,cloud#kakao enterprise#smartnic#kakao i cloud#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/137
+"스마트한 컨택센터의 핵심, 챗봇에 대하여",2021.12.24,ai#chatbot#contact center#kakao enterprise#kakao i#machine learning#nlp#chatbot#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/128
+내 마음대로 설정하는 나만의 호출명령어,2021.11.08,kakao enterprise#kakao i#wakeupword#카카오미니#kakao enterprise#카카오엔터프라이즈 기술블로그#헤이자비스#헤이죠르디#heykakao#호출 명령어,카카오엔터프라이즈,https://tech.kakaoenterprise.com/122
+WebRTC 응용 서비스를 개발하는 2가지 방법,2021.10.25,kakao enterprise#kakao i#kakao i connect live#p2p#webrtc#livestreaming#라이브커머스#kakao enterprise#카카오엔터프라이즈 기술블로그#화상회의,카카오엔터프라이즈,https://tech.kakaoenterprise.com/121
+"헤이카카오 x 직방 프롭테크 프로젝트, API로 부동산 Bot 만들기",2021.10.18,api#api#kakao enterprise#봇개발#봇기획#부동산api#kakao enterprise#카카오엔터프라이즈 기술블로그#프롭테크#heykakao,카카오엔터프라이즈,https://tech.kakaoenterprise.com/120
+"한국어 자연어 처리 기술과 AI, 어디까지 왔니?",2021.10.07,ai#kakao enterprise#nlp#data#ai#자연어처리기술#kakao enterprise#카카오엔터프라이즈 기술블로그#한국어자연어처리#한글날,카카오엔터프라이즈,https://tech.kakaoenterprise.com/117
+헤이카카오를 '자비스'로 만들어보자,2021.07.09,wakeupword#내호출명령어#사용자호출명령어#음성인식#음성인식기술#음성인식기술#음성인식기술#헤이죠르디#heykakao#호출 명령어,카카오엔터프라이즈,https://tech.kakaoenterprise.com/111
+"프레임워크의 선택, React vs Angular",2021.06.02,angular#front end#kakao enterprise#react#storybook#unit testing#vac#리액트#angular#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/109
+사오정 API - 음악 재생 발화는 내게 맡겨주세요. [기술편],2021.05.03,kakao enterprise#kakao i#nlp#발화교정#스마트 스피커#오류 교정#음성 인식 후처리#카카오미니#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/106
+사오정 API - 음악 재생 발화는 내게 맡겨주세요. [기획편],2021.05.03,planning#도메인 기획#실패 발화 개선#음성 인터페이스#음악 검색,카카오엔터프라이즈,https://tech.kakaoenterprise.com/107
+"물어보기 전에, 헤이카카오가 먼저 알려주는 ""내 소식""",2021.04.06,ai비서#ai알림#kakao enterprise#notification#내 소식#알림센터#카카오ai#카카오미니#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/103
+"테스트는 누구나 할 수 있지만, QA는 준비된 자만이 할 수 있습니다.",2021.03.09,it기술블로그#qa#quality accelerator#quality assurance#rst#tech blog#리스크 기반 테스팅#kakao enterprise#test#효율적 테스트,카카오엔터프라이즈,https://tech.kakaoenterprise.com/104
+화상회의 보안성 향상을 위한 E2EE 기술 연구,2021.02.01,chrome#connectlive#insertablestream#javascript#webrtc#tech blog#media-server#암호화#kakao enterprise#화상회의,카카오엔터프라이즈,https://tech.kakaoenterprise.com/101
+"더 작고 똑똑한 스마트 스피커, 미니헥사",2020.12.30,ai스피커#미니헥사#미니헥사스피커#스마트디바이스#스마트스피커#음성인식스피커#음성인식스피커#카카오미니#카카오스피커#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/97
+지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다,2020.12.14,ai lab#ai research#attnio#emnlp#kakao enterprise#경로탐색모델#대화 엔진#지식그래프#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/95
+카카오 i 랜선 친구 외개인아가 (2)기술편,2020.11.26,chit chat#open-domain chatbot#persona#스몰톡봇#스몰톡봇#외개인아가#외개인아가#chatbot#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/90
+카카오 i 랜선 친구 외개인아가 (1)기획편,2020.11.26,chit chat#open-domain chatbot#persona#스몰톡봇#스몰톡봇#외개인아가#외개인아가#chatbot#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/78
+일상에서 언제 어디서나 쓰도록 - 미니링크 개발 이야기,2020.10.23,ai디바이스#heykakao#kakao enterprise#kakao i#mini link#mini link#음성비서서비스#kakao enterprise#카카오엔터프라이즈 기술블로그#heykakao,카카오엔터프라이즈,https://tech.kakaoenterprise.com/79
+스마트하게 식단을 관리하는 딥러닝 기술,2020.10.20,ai lab#ai research#inceptionv4#kakao enterprise#멀티미디어처리#스마트홈트#음식검출#음식분류#kakao enterprise#카카오엔터프라이즈 영입,카카오엔터프라이즈,https://tech.kakaoenterprise.com/84
+카카오 i의 작고 소중한 힐링,2020.08.28,kakao enterprise#백색소음#자연의소리#카카오 i#kakao enterprise#카카오엔터프라이즈 기술블로그#코로나블루#heykakao#힐링명상#힐링사운드,카카오엔터프라이즈,https://tech.kakaoenterprise.com/67
+AI에게 어떻게 음성을 가르칠까?,2020.08.10,kakao i#mel scale#mfcc#음성#음성인식#음성생성#카카오미니#특징벡터#핵심어 검출#화자인식,카카오엔터프라이즈,https://tech.kakaoenterprise.com/66
+정답 유형을 분류하는 딥러닝 기술,2020.07.24,ai lab#bert#cnn#kakao enterprise#nlp#대화 엔진#정답 유형#카카오 i#kakao enterprise#카카오엔터프라이즈 영입,카카오엔터프라이즈,https://tech.kakaoenterprise.com/64
+"카카오 i, 누구냐 넌",2020.06.09,ai 페르소나#말투#목소리#성격#어조#어투#음색#카카오 i#persona#heykakao,카카오엔터프라이즈,https://tech.kakaoenterprise.com/60
+카카오미니의 슬롯 태깅 방법,2020.05.22,crf#entity tagging#kakao i 오픈 빌더#lstm#slot filling#slot tagging#slot tagging#slot filling#entity tagging#카카오미니,카카오엔터프라이즈,https://tech.kakaoenterprise.com/58
+카카오 i  번역 성능 향상 실험 : 대규모 말뭉치를 활용한 사전학습,2020.05.07,ai lab#kakao enterprise#nlp#transformer#기계번역#번역 엔진#사전학습#kakao enterprise#카카오엔터프라이즈 기술블로그,카카오엔터프라이즈,https://tech.kakaoenterprise.com/48
+카카오 i 번역 서비스에 적용된 학습 원리와 성능 개선기,2020.04.24,attention net#context 번역#data augmentation#many to many#neural machine translation#zero-shot translation#kakao i#카카오 i 번역#카카오번역#카카오번역서비스,카카오엔터프라이즈,https://tech.kakaoenterprise.com/22
+카카오미니의 명령어 분류 방법,2020.04.24,cnn#entity tag vector#kakao enterprise#local word vector#pos vector#카카오 음성인식#카카오미니#kakao enterprise#카카오엔터프라이즈 영입#heykakao,카카오엔터프라이즈,https://tech.kakaoenterprise.com/43
+"""헤이, 카카오!""를 불러야 하는 이유",2020.04.24,ai스피커#dnn#wake-up word#스마트 스피커#음향 모델#카카오 음성인식#카카오미니#핵심어 검출#heykakao#호출 명령어,카카오엔터프라이즈,https://tech.kakaoenterprise.com/42
+사진에서 사람을 읽다,2020.04.24,ai lab#ai research#blurring#kakaoenterprise#r-cnn#rf-rcnn#객체 검출#딥러닝#정제 네트워크#카카오맵 로드뷰,카카오엔터프라이즈,https://tech.kakaoenterprise.com/40
+신경망 번역 모델의 진화 과정,2020.04.24,attention net#cnn#end_to_end 기계 번역#kakao enterprise#neural machine translation#nmt#neural machine translation#카카오 i 번역#kakao enterprise#카카오엔터프라이즈 영입,카카오엔터프라이즈,https://tech.kakaoenterprise.com/45
+Kakao i 번역이 양질의 대규모 학습 데이터를 확보하는 방법,2020.04.14,ableualign#bleu#bleualign#n-gram#nmt#word2vec#neural machine translation#카카오 i 번역#카카오번역,카카오엔터프라이즈,https://tech.kakaoenterprise.com/50
