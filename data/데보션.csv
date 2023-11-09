@@ -1,4 +1,4 @@
-title,date,tags,company,link
+﻿title,date,tags,company,link
 AWS ALB로 부터 반환되는 502 bad gateway 에러 트러블슈팅,2023.11.07,aws#fastapi,데보션,https://devocean.sk.com/blog/sub/index.do?ID=&boardType=&searchData=&page=1&subIndex=%EC%B5%9C%EC%8B%A0+%EA%B8%B0%EC%88%A0+%EB%B8%94%EB%A1%9C%EA%B7%B8#none
 K3s로 multi kubernetes 구축하기,2023.11.06,kubernetes,데보션,https://devocean.sk.com/blog/sub/index.do?ID=&boardType=&searchData=&page=1&subIndex=%EC%B5%9C%EC%8B%A0+%EA%B8%B0%EC%88%A0+%EB%B8%94%EB%A1%9C%EA%B7%B8#none
 Spring Boot 컨테이너 이미지 사이즈 경량화 방법,2023.11.03,spring#docker,데보션,https://devocean.sk.com/blog/sub/index.do?ID=&boardType=&searchData=&page=1&subIndex=%EC%B5%9C%EC%8B%A0+%EA%B8%B0%EC%88%A0+%EB%B8%94%EB%A1%9C%EA%B7%B8#none

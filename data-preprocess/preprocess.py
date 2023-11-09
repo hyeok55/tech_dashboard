@@ -2,6 +2,8 @@ import pickle
 import os
 import pandas as pd
 from tag_dictionary import tag_dict
+from string import punctuation
+import re
 
 def replace_tag(ls):
     """
@@ -100,6 +102,15 @@ def replace_date(date):
         result = splited_date[2] + "." + month_dict2[splited_date[0]] + "."
     return result + splited_date[1] if len(splited_date[1]) == 2 else result + "0" + splited_date[1] 
 
+def escape_to_raw_string(input_string):
+    escaped_string = input_string.encode('unicode-escape').decode()
+    return escaped_string
+
+def remove_escape(original_string):
+    raw_string = escape_to_raw_string(re.sub("[가-힣0-9\w]", "", original_string))
+    reduced_chars = set("".join(re.findall("[가-힣\d\w]", original_string)) + re.sub('\\\\[\d\w]+',"",  raw_string))
+    return "".join([c if c in reduced_chars else " " for c in original_string]).strip()
+
 # 크롤링한 데이터를 하나의 데이터프레임으로 조합    
 file_list = [file for file in os.listdir("../data/") if file.endswith(".pkl")]
 
@@ -159,4 +170,4 @@ df["date"] = df["date"].apply(replace_date)
 
 # csv 파일로 저장
 for company in df["company"].unique():
-    df.loc[df["company"] == company].to_csv(f"../data/{company}.csv", index=False)
+    df.loc[df["company"] == company].to_csv(f"../data/{company}.csv", index=False, encoding = 'utf-8-sig')

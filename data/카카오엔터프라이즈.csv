@@ -1,4 +1,4 @@
-title,date,tags,company,link
+﻿title,date,tags,company,link
 Redis 서비스를 만들어가는 QA Engineer의 기록,2023.03.13,kakao enterprise#kakao i cloud#qa#qa engineer#quality assurance#redis#test process#kakao#kakao i cloud#cloud,카카오엔터프라이즈,https://tech.kakaoenterprise.com/183
 워크서버개발팀의 GitHub Actions 적용기,2023.02.27,ci#ci#custom actions#github#github actions#kakao enterprise#kakao enterprise,카카오엔터프라이즈,https://tech.kakaoenterprise.com/180
 카카오워크 음성채팅 웹 개발기,2023.02.08,front end#kakao enterprise#rxjs#svelte#webrtc#webview#reactive-programming#카카오워크,카카오엔터프라이즈,https://tech.kakaoenterprise.com/179
