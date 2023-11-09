@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 from django.db.models import F
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, JsonResponse
+from .visualization import *
 import csv
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
@@ -189,3 +190,15 @@ def save_csv_to_model(request):
             # else:#갱신
             #     pass
     return HttpResponse("CSV 파일을 처리했습니다.")
+
+def all_chart(request):
+    all_tags()
+    return render(request, 'techs/home.html')
+
+def company_chart(request, company):
+    company_tags(company)
+    return render(request, 'techs/home.html')
+
+def company_name(request):
+    select_company = Company.objects.values_list('company_name', flat=True).distinct()
+    return render(request, 'techs/home.html', {'select_company': select_company})
