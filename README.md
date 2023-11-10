@@ -110,15 +110,7 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 - Django Form을 이용한 프론트 개발
 
 ## E-R 다이어그램
-![image](https://velog.velcdn.com/images/jg31109/post/4e6cfb5f-51ff-4671-8fa6-ec52b26ffe63/image.png)
-
-### Post_tag, company_tag가 있어야 하는 이유
-
-1. post테이블만 있으면 되는데 왜 company_tag, tag, company 테이블을 추가했는가
-데이터 시각화 시 정보를 빠르게 불러오기 위해서(기존의 post 테이블에서 정보를 조회할 경우 select from where 구문을 이용해서 불러와야 하기 때문에 데이터가 많아지면 시간이 오래 걸리는 이슈가 발생한다)
-2. post_tag 테이블 생성 이유(데이터 일관성 이슈)
-post 테이블과 tag 테이블은 N:M 관계이므로 CRUD시 데이터 일관성이 유지되지 못할 확률이 크다. 따라서 N:1, 1:M 관계로 만들어 하나의 테이블에서만 CRUD가 일어나도록 한다.
-
+![image](https://github.com/hyeok55/tech_dashboard/assets/77157003/7f86280b-7908-494b-b31e-5c5a7c7e3984)
 
 
 ## 프로젝트 목적

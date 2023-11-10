@@ -20,8 +20,13 @@ class Post(models.Model):
     likes = models.IntegerField(default=0)
     url = models.TextField(verbose_name='링크', unique=False)
 
+
     def __str__(self):
         return f'{self.title},{self.company.company_name},{self.date},{self.views},{self.likes}'
+    class Meta:
+        indexes = [
+            models.Index(fields=['url'], name='idx_url'),
+        ]
 
 
 class Tag(models.Model):
@@ -64,12 +69,13 @@ class Company_Tag(models.Model):
 #     def __str__(self):
 #         return f'{self.user_email},{self.user_password}'
 
+
 class User_Likes(models.Model):
     # user_likes_id  pk
-    user_id=models.ForeignKey(User, on_delete=models.CASCADE,
+    user=models.ForeignKey(User, on_delete=models.CASCADE,
                             verbose_name='사용자')  # class Post# tag table
-    post_id=models.ForeignKey(Post, on_delete=models.CASCADE,
+    post=models.ForeignKey(Post, on_delete=models.CASCADE,
                             verbose_name='게시글')  # class Post# tag table
 
     def __str__(self):
-        return f'{self.user_id.username},{self.post_id.title}'
+        return f'{self.user.username},{self.post.title}'
