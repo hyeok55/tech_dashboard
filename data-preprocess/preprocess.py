@@ -1,7 +1,7 @@
 import pickle
 import os
 import pandas as pd
-from tag_dictionary import tag_dict
+from dicts import tag_dict, month_dict1, month_dict2
 from string import punctuation
 import re
 
@@ -25,37 +25,6 @@ def replace_date(date):
     if ". " in date:
         # 20xx. x(xx). x(xx). -> 20xx.x(xx).x(xx)
         date = date[:-1].replace(" ","")
-        
-    # 달을 숫자로 변환 하는 딕셔너리들
-    month_dict1 = {
-        "Jan": "01",
-        "Feb": "02",
-        "Mar": "03",
-        "Apr": "04",
-        "May": "05",
-        "Jun": "06",
-        "Jul": "07",
-        "Aug": "08",
-        "Sep": "09",
-        "Oct": "10",
-        "Nov": "11",
-        "Dec": "12"
-        } 
-    month_dict2 = {
-        "January": "01",
-        "February": "02",
-        "March": "03",
-        "April": "04",
-        "May": "05",
-        "June": "06",
-        "July": "07",
-        "August": "08",
-        "September": "09",
-        "October": "10",
-        "November": "11",
-        "December": "12"
-    }
-    
 
     splited_date = date.split(".")
     if len(splited_date) == 3:
@@ -102,6 +71,29 @@ def replace_date(date):
         result = splited_date[2] + "." + month_dict2[splited_date[0]] + "."
     return result + splited_date[1] if len(splited_date[1]) == 2 else result + "0" + splited_date[1] 
 
+def escape_to_raw_string(input_string):
+    escaped_string = input_string.encode('unicode-escape').decode()
+    return escaped_string
+
+def remove_escape(original_string):
+    raw_string = escape_to_raw_string(re.sub("[가-힣0-9\w]", "", original_string))
+    reduced_chars = set("".join(re.findall("[가-힣\d\w]", original_string)) + re.sub('\\\\[\d\w]+',"",  raw_string))
+    return "".join([c if c in reduced_chars else " " for c in original_string]).strip()
+
+def make_dataframe(site_list):
+    df = pd.DataFrame(
+        {
+            "title": [],
+            "date": [],
+            "tags": [],
+            "company": [],
+            "link": []
+        }
+        )
+    for site in site_list:
+        df = pd.concat([df, pd.read_csv(f"../data/{site}.csv")]).reset_index(drop=True)   
+    return df
+
 # 크롤링한 데이터를 하나의 데이터프레임으로 조합    
 file_list = [file for file in os.listdir("../data/") if file.endswith(".pkl")]
 
@@ -123,28 +115,8 @@ for repr, ls in tag_dict.items():
 sites1 = ["devocean", "kakao", "kakao_pay"]
 sites2 = ["full_line_data", "kakaoenter_data", "naver_data", "skplanet_data", "socar_data"]
 
-df1 = pd.DataFrame(
-    {
-        "title": [],
-        "date": [],
-        "tags": [],
-        "company": [],
-        "link": []
-    }
-)
-df2 = pd.DataFrame(
-    {
-        "title": [],
-        "date": [],
-        "tags": [],
-        "company": [],
-        "link": []
-    }
-)
-for site in sites1:
-    df1 = pd.concat([df1, pd.read_csv(f"../data/{site}.csv")]).reset_index(drop=True)
-for site in sites2:
-    df2 = pd.concat([df2, pd.read_csv(f"../data/{site}.csv")]).reset_index(drop=True)
+df1 = make_dataframe(sites1)
+df2 = make_dataframe(sites2)
 
 df1["tags"] = df1["tags"].apply(lambda x: x[2:-2].split("', '"))
 df2["tags"] = df2["tags"].str.split(", ")
@@ -161,4 +133,10 @@ df["date"] = df["date"].apply(replace_date)
 
 # csv 파일로 저장
 for company in df["company"].unique():
-    df.loc[df["company"] == company].to_csv(f"../data/{company}.csv", index=False, encoding = 'utf-8-sig')
+    company_df = df.loc[df["company"] == company]
+    
+    if company in ["당근", "요기요", "데보션"]:
+        company_df = df.loc[df["company"] == company]
+        company_df["title"] = company_df["title"].apply(remove_escape)
+        
+    company_df.to_csv(f"../data/{company}.csv", index=False, encoding = 'utf-8-sig')
