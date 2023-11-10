@@ -16,35 +16,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 전체 버튼을 클릭했을 때의 처리
     allButton.addEventListener("click", function () {
-        // PyChart를 사용하여 그래프를 그리는 코드를 추가
-        chartContainer.innerHTML = "<p>전체 그래프를 표시</p>";
+        fetch ("visualization_all/")
+            .then(response => response.json())
+            .then(data => {
+                Plotly.plot('chart-container', data.plot_div, {});
+            })
+            .catch(error => console.error('Error: ', error))
     });
 
     // // 기업별 버튼을 클릭했을 때의 처리
-    // companyButton.addEventListener("click", function () {
-    //     chartContainer.innerHTML = `
-    //         <div class="company-list">
-    //             <button id="sokka-button">쏘카</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //             <button id="naver-button">네이버</button>
-    //         </div>
-    //     `;
-    //     console.log("print hi");
-    // });
+    companyButton.addEventListener("click", function () {
+        chartContainer.innerHTML = `
+            <div class="company-list">
+                <button id="sokka-button">쏘카</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+                <button id="naver-button">네이버</button>
+            </div>
+        `;
+        console.log("print hi");
+    });
     // 특정정기업 버튼 클릭했을시 처리
     chartContainer.addEventListener("click", function (event) {
         if (event.target.id === "sokka-button") {
