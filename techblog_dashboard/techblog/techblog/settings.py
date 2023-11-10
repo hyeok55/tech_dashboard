@@ -17,6 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = "/static/"
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATIC_DIRS = [STATIC_DIR, ]
 STATICFILES = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'techs/media')
@@ -86,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'testdb3',
         'USER': 'root',
-        'PASSWORD': '20193878',
+        'PASSWORD': 'dlqhrud-1124',
         'HOST': 'localhost',
         'PORT': '3306',
     }
