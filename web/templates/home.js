@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 전체 버튼을 클릭했을 때의 처리
     allButton.addEventListener("click", function () {
         // PyChart를 사용하여 그래프를 그리는 코드를 추가
-        chartContainer.innerHTML = "<p>전체 그래프를 표시</p>";
+        chartContainer.innerHTML = `{{ plot_div | safe }}`;
     });
 
     // 기업별 버튼을 클릭했을 때의 처리
