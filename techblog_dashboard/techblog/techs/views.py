@@ -190,7 +190,9 @@ def save_csv_to_model(request):
     return HttpResponse("CSV 파일을 처리했습니다.")
 
 def all_chart(request):
-    all_tags()
+    data = Company_Tag.objects.values('count', 'tag__tag_name')
+    df = pd.DataFrame(data)
+    all_tags(df)
     return render(request, 'techs/home.html')
 
 def company_chart(request, company):
