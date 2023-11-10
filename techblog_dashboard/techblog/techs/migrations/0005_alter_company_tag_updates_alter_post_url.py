@@ -18,6 +18,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="post",
             name="url",
-            field=models.TextField(unique=True, verbose_name="링크"),
+            field=models.TextField(unique=False, verbose_name="링크"),
         ),
     ]
