@@ -21,6 +21,7 @@ STATICFILES = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'techs/media')
 MEDIA_URL = '/media/'
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -85,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'testdb3',
         'USER': 'root',
-        'PASSWORD': 'dlqhrud-1124',
+        'PASSWORD': '20193878',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -114,9 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'ko-kr'
+USE_TZ = True
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
