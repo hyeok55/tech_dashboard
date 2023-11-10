@@ -13,7 +13,8 @@ urlpatterns = [
     path('signup/', signup, name='signup'),
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
-    path('save', views.save_csv_to_model, name='save')
+    path('save', views.save_csv_to_model, name='save'),
+    path('visualization_all/', views.all_chart, name='visualization'),
 
 ]
 
