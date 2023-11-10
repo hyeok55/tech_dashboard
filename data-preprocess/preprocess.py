@@ -6,8 +6,12 @@ from string import punctuation
 import re
 
 def replace_tag(ls):
-    """
-    tag 전처리 함수
+    """tag 전처리 함수
+    Args:
+        ls (list): 게시물의 태그 리스트
+
+    Returns:
+        str: 정제된 태그들을 #로 연결한 문자열    
     """
     if isinstance(ls, list):
         return "#".join(list(map(lambda x: tag_map.get(x.lower(), x.lower()), ls)))
@@ -15,9 +19,12 @@ def replace_tag(ls):
         return ""
     
 def replace_date(date):
-    """
-    date 전처리 함수
-    20xx.xx.xx 형식으로 변환
+    """date 전처리 함수
+    Args:
+        date (str): 작성날짜
+
+    Returns:
+        str: 20xx.xx.xx 형식으로 변환된 날짜   
     """
     if "-" in date:
         # 20xx-xx-xx 변환
@@ -72,15 +79,43 @@ def replace_date(date):
     return result + splited_date[1] if len(splited_date[1]) == 2 else result + "0" + splited_date[1] 
 
 def escape_to_raw_string(input_string):
+    """escape 문자를 raw string으로 변환하는 함수
+
+    Args:
+        input_string (str): 변환할 문자열
+
+    Returns:
+        str: 변환된 raw string
+    """
     escaped_string = input_string.encode('unicode-escape').decode()
     return escaped_string
 
 def remove_escape(original_string):
-    raw_string = escape_to_raw_string(re.sub("[가-힣0-9\w]", "", original_string))
+    """escape 문자 제거 함수
+
+    Args:
+        original_string (str): 기존 문자열
+
+    Returns:
+        str: escape 문자를 제거한 문자열
+    """
+    # 기존 문자에서 한글\알파벳\숫자를 제외한 문자열을 raw string으로 변환
+    raw_string = escape_to_raw_string(re.sub("[가-힣\d\w]", "", original_string))
+    # 기존 문자에서 이스케이프 문자가 아닌 문자들의 집합
     reduced_chars = set("".join(re.findall("[가-힣\d\w]", original_string)) + re.sub('\\\\[\d\w]+',"",  raw_string))
+    
+    # 기존 문자에서 redued_chars에 있는 문자들을 순서대로 연결, reduced_chars에 없는 문자는 공백으로 대체
     return "".join([c if c in reduced_chars else " " for c in original_string]).strip()
 
 def make_dataframe(site_list):
+    """특정 데이터 프레임 만드는 함수
+
+    Args:
+        site_list (list): 일부 사이트 리스트
+
+    Returns:
+        pandas.core.frame.DataFrame: 사이르 리스트에 있는 사이트들의 게시물 정보를 담은 데이터 프레임
+    """
     df = pd.DataFrame(
         {
             "title": [],
@@ -107,11 +142,6 @@ for file in file_list:
                 tmp[i]["tags"] = list(map(lambda x:x[1:], tmp[i]["tags"]))
         data.extend(tmp)
         
-tag_map = {}
-for repr, ls in tag_dict.items():
-    for tag in ls:
-        tag_map[tag] = repr
-        
 sites1 = ["devocean", "kakao", "kakao_pay"]
 sites2 = ["full_line_data", "kakaoenter_data", "naver_data", "skplanet_data", "socar_data"]
 
@@ -128,6 +158,11 @@ tb.columns = ['title', 'date', 'tags', 'company', 'link']
 df = pd.concat([tb, df1, df2]).reset_index(drop=True)
 
 # tags와 date를 수정
+tag_map = {}
+for repr, ls in tag_dict.items():
+    for tag in ls:
+        tag_map[tag] = repr
+        
 df["tags"] = df["tags"].apply(replace_tag)
 df["date"] = df["date"].apply(replace_date)
 
