@@ -1,13 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     //검색 submit 이벤트
-    document.getElementById('search-icon').addEventListener('click', function () {
+    function handleSearch() {
         var inputElement = document.querySelector('input[name="user_input"]');
         var inputValue = inputElement.value;
         var form = document.getElementById('searchForm');
         form.action = '/techs/search/' + inputValue;
         console.log(inputValue);
         form.submit();
+    }
+
+    document.getElementById('search-icon').addEventListener('click', handleSearch);
+
+    var inputElement = document.getElementById('search-box');
+    inputElement.addEventListener('keydown', function (event) {
+        if (event.keyCode === 13) {
+            handleSearch();
+        }
     });
+
 
     //대시보드 이벤트 처리
     const allButton = document.getElementById("all-button");
@@ -16,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 전체 버튼을 클릭했을 때의 처리
     allButton.addEventListener("click", function () {
-        fetch ("visualization_all/")
+        fetch("visualization_all/")
             .then(response => response.json())
             .then(data => {
                 Plotly.plot('chart-container', data.plot_div, {});

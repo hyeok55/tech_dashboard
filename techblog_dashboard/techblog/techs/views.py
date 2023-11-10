@@ -11,7 +11,7 @@ from django.shortcuts import render, redirect
 from .forms import SignUpForm
 from django.conf import settings
 import os
-import plotly.express as px
+from django.core.exceptions import ObjectDoesNotExist
 from datetime import datetime
 import logging
 
@@ -41,6 +41,7 @@ def user_login(request):
 
         if user is not None:
             login(request, user)
+            print("로그인성공")
             return redirect('show_all')
         else:
             # 로그인 실패 처리
@@ -51,8 +52,7 @@ def user_login(request):
 ##로그아웃
 def user_logout(request):
     logout(request)
-    return redirect('your_redirect_view_name')
-
+    return redirect('show_all')
 
 
 def read_csv(file_name):
@@ -71,20 +71,35 @@ def write_csv(now_list, file_name):
 like_list = read_csv("../liked.csv")
 
 def show_all(request):
+    islogin=False
+    user_likes_instance=None
+    like_list=[]
+    print("화면진입")
+    if request.user.is_authenticated:
+        islogin=True
+        username = request.user.username
+        try:
+            user_likes_instance = User_Likes.objects.filter(user__username=username)
+            like_list=[like.post_id for like in user_likes_instance]
+        except User_Likes.DoesNotExist and ObjectDoesNotExist: ##모두 False
+            user_likes_instance = None
+
     posts = Post.objects.exclude(company=None).values(
         'pk','title', 'url', 'company__company_name', 'date', 'views', 'likes').order_by('-date')
-    companies=Company.objects.order_by('-company_name')
     for p in posts:
-        if p["pk"] in like_list:
-            p["was_liked"]="True"
+        if islogin==False:
+            p["was_liked"]="None"
         else:
-            p["was_liked"]="False"
+            if p["pk"] in like_list:
+                p["was_liked"]="True"
+            else:
+                p["was_liked"]="False"
         p["tag_list"]=[]
         tags=Post_tag.objects.select_related('tag').filter(post=p["pk"]).values('tag__tag_name')
         for tag in tags:
             p["tag_list"].append(tag)
-
-    return render(request, 'techs/home.html', {"postings": posts})
+    print(islogin)
+    return render(request, 'techs/home.html', {"postings": posts, "islogin" : islogin})
 
 def searchquery(request, query):
     company_list=[]
@@ -131,11 +146,21 @@ def increaseviews(request, Post_id):
     return redirect('show_all')
 
 def increaselikes(request, Post_id):
-    like_list.append(Post_id)
-    write_csv(like_list, "../liked.csv")
-    post = Post.objects.get(id=Post_id)  # post_id에 해당하는 레코드 가져오기
-    post.likes += 1  # 'view' 필드 값 1 증가
-    post.save()  # 변경 사항 저장
+    post_instance = Post.objects.get(id=Post_id)  # post_id에 해당하는 레코드 가져오기
+    post_instance.likes += 1  # 'view' 필드 값 1 증가
+    post_instance.save()  # 변경 사항 저장
+
+
+    if request.user.is_authenticated:
+        user_instance=User.objects.get(username=request.user.username)
+
+        user_likes_instance, _=User_Likes.objects.get_or_create(
+            user=user_instance,
+            post=post_instance
+            )
+    else:
+        print("ERROR")
+
     return redirect('show_all')
 
 
@@ -182,63 +207,25 @@ def save_csv_to_model(request):
                     company_tag, created = Company_Tag.objects.get_or_create(
                         company=company_instance,
                         tag=tag_instance,
-                        #defaults={'updates': datetime.now()}
+                        defaults={'updates': datetime.now()}
                     )
                     
                     if not created:
-                        #company_tag.updates = datetime.now()
+                        company_tag.updates = datetime.now()
                         company_tag.count += 1
                         company_tag.save()
     return HttpResponse("CSV 파일을 처리했습니다.")
 
 def all_chart(request):
-    tag = pd.DataFrame.from_records(Post_tag.objects.all().values('tag__tag_name'))
-    tag.drop(tag[tag['tag__tag_name'] == ''].index, inplace=True)
-    tag_df = pd.DataFrame.from_records(Post_tag.objects.all().values('tag__tag_name').distinct())
-    tag_df.drop(tag_df[tag_df['tag__tag_name'] == ''].index, inplace=True)
-    count = pd.DataFrame(tag.groupby('tag__tag_name').size().reset_index(name='count'))
-    # count = count.dropna(subset=['tag__tag_name'])
-    top_20 = count.sort_values(by='count', ascending=False).head(20)
-    all_df = pd.merge(tag_df, top_20, on='tag__tag_name')
-    fig = px.bar(
-        all_df, 
-        x='count',
-        y='tag__tag_name',
-        title='Tag frequency in All posts',
-        labels={'count':'Frequency', 'tag__tag_name':'Tags'},
-        color='tag__tag_name'
-    )
-    fig.update_layout(
-    width = 1000,
-    height = 800,
-    xaxis={'categoryorder':'total descending'},  # 빈도수가 높은 순으로 정렬
-    yaxis_title='Tags'  # y축 제목 설정
-    )
-    # plot_div = fig.to_html(full_html=False, include_plotlyjs=True)
-    plot_div = fig.to_json()
-    fig.show()
+    data = Company_Tag.objects.values('count', 'tag__tag_name')
+    df = pd.DataFrame(data)
+    all_tags(df)
+    return render(request, 'techs/home.html')
 
-    logging.info('Sending plot data...')
-    return JsonResponse({'plot_div': plot_div})
+def company_chart(request, company):
+    company_tags(company)
+    return render(request, 'techs/home.html')
 
-    # return render(request, 'techs/all.html', context={'plot_div':plot_div})
-
-
-
-
-# def all_chart(request):
-#     tag_df = pd.DataFrame(list(Company_Tag.objects.all().values('tag')))
-#     count_df = pd.DataFrame(list(Company_Tag.objects.all().values('count')))
-#     df = 
-#     data = Company_Tag.objects.values('count', 'tag__tag_name')
-#     df = pd.DataFrame(data)
-#     all_tags(df)
-#     return render(request, 'techs/home.html')
-
-# def company_chart(request, company):
-#     company_tags(company)
-#     return render(request, 'techs/home.html')
-
-# def company_name(request):
-#     select_company = Company.objects.values_list('company_name', flat=True).distinct()
-#     return render(request, 'techs/home.html', {'select_company': select_company})
+def company_name(request):
+    select_company = Company.objects.values_list('company_name', flat=True).distinct()
+    return render(request, 'techs/home.html', {'select_company': select_company})
