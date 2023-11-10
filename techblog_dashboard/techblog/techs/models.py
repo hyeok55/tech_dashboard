@@ -18,7 +18,7 @@ class Post(models.Model):
     date = models.DateTimeField(verbose_name='작성일')
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
-    url = models.TextField(verbose_name='링크')
+    url = models.TextField(verbose_name='링크', unique=True)
 
     def __str__(self):
         return f'{self.title},{self.company.company_name},{self.date},{self.views},{self.likes}'
@@ -50,7 +50,7 @@ class Company_Tag(models.Model):
     tag = models.ForeignKey(Tag, on_delete=models.CASCADE,
                             verbose_name='태그 내용')  # class Post# tag table
     count = models.IntegerField(default=0)
-    updates = models.DateTimeField(verbose_name='업데이트 날짜')
+    updates = models.DateTimeField(verbose_name='업데이트 날짜', auto_now=True)
 
     def __str__(self):
         return f'{self.company.company_name},{self.tag.tag_name}'

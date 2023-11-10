@@ -8,6 +8,7 @@
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
 </head>
+
 <body>
     <header> <!-- 4. 페이지의 주요 정보 -->
         <h1>Login</h1>
@@ -16,16 +17,28 @@
     <main> <!-- 5. 페이지의 주요 콘텐츠 -->
         <section class="login">
             {% if error_message %}
-                <p>{{ error_message }}</p>
+            <p>{{ error_message }}</p>
             {% endif %}
             <form method="post" action="{% url 'login' %}">
+                <br>
+                <br>
+                <br>
                 {% csrf_token %}
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
+                <label for="username" class="larger-label22">Username </label>
+                <input type=" text" id="username" name="username" required>
+                <br>
+                <br>
+                <br>
+                <label for="password" class="larger-label22">Password </label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'signup' %}" class="larger-label18">회원가입</a>
+                <button type="submit" class="larger-label18">Login</button>
+                <br><br><br>
             </form>
         </section>
 </body>
+
 </html>

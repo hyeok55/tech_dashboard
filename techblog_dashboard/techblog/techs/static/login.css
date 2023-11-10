@@ -1,0 +1,100 @@
+body {
+    padding: 100px 400px;
+    text-align: center;
+    margin: 0;
+    background-color: #333;
+}
+
+header {
+    padding: 30px;
+    color: #fff;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 50px;
+}
+
+main {
+    background-color: #cbc1c1;
+    border: 5px solid grey;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+}
+
+li {
+    white-space: pre-line;
+}
+
+.error-messages {
+    color: red;
+    list-style-type: none;
+    /* Remove bullet points from list items */
+}
+
+input {
+    margin-left: 10px;
+    border: none;
+    padding: 5px;
+    background: transparent;
+    border-bottom: 2px white solid;
+}
+
+label {
+    margin: 20px;
+}
+
+.larger-label22 {
+    font-size: 22px;
+}
+
+.larger-label18 {
+    font-size: 18px;
+}
+
+a {
+    margin-right: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 4px solid #cbc1c1;
+}
+
+a:visited {
+    text-decoration: none;
+    text-decoration-color: whitesmoke;
+}
+
+a:hover {
+    text-align: center;
+    border: none;
+    color: white;
+    border: 4px solid grey;
+    background-color: rgba(95, 95, 95, 0.3);
+}
+
+button {
+    background-color: #cbc1c1;
+    margin-left: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 4px solid #cbc1c1;
+}
+
+button:hover {
+    text-align: center;
+    color: white;
+    border: 4px solid grey;
+    background-color: rgba(95, 95, 95, 0.3);
+}
