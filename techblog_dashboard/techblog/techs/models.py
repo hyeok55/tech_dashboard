@@ -50,7 +50,7 @@ class Company_Tag(models.Model):
     tag = models.ForeignKey(Tag, on_delete=models.CASCADE,
                             verbose_name='태그 내용')  # class Post# tag table
     count = models.IntegerField(default=0)
-    updates = models.DateTimeField(verbose_name='업데이트 날짜')
+    updates = models.DateTimeField(verbose_name='업데이트 날짜', auto_now=True)
 
     def __str__(self):
         return f'{self.company.company_name},{self.tag.tag_name}'

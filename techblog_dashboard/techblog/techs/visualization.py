@@ -12,6 +12,9 @@ import os
 
 from .models import *
 
+import matplotlib
+matplotlib.use('agg')
+
 # 데이터 -> views.py에서 정의?
 
 # data = Company_Tag.objects.values('company', 'tag', 'count')
@@ -21,15 +24,15 @@ from .models import *
 
 
 # 전체 기업 태그 빈도수 barchart 
-def all_tags():
-    tag = Company_Tag.objects.values[:]['tag']
-    count = Company_Tag.objects.values[:]['count']
-    tag_df = pd.DataFrame(tag)
-    count_df = pd.DataFrame(count)
+def all_tags(df):
+    # tag = Company_Tag.objects.values[:]['tag']
+    # count = Company_Tag.objects.values[:]['count']
+    # tag_df = pd.DataFrame(tag)
+    # count_df = pd.DataFrame(count)
     plt.title('전체 기업 태그 빈도수')
     plt.xlabel('빈도수')
     plt.ylabel('태그')
-    sns.barplot(x=count_df, y=tag_df, palette='cubehelix')
+    sns.barplot(x='count', y='tag', df=df, palette='cubehelix')
     plt.savefig(os.path.join(STATIC_DIR, 'images/all.png'))
 
 

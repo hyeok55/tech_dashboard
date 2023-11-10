@@ -180,17 +180,19 @@ def save_csv_to_model(request):
                     company_tag, created = Company_Tag.objects.get_or_create(
                         company=company_instance,
                         tag=tag_instance,
-                        defaults={'updates': datetime.now()}
+                        #defaults={'updates': datetime.now()}
                     )
                     
                     if not created:
-                        company_tag.updates = datetime.now()
+                        #company_tag.updates = datetime.now()
                         company_tag.count += 1
                         company_tag.save()
     return HttpResponse("CSV 파일을 처리했습니다.")
 
 def all_chart(request):
-    all_tags()
+    data = Company_Tag.objects.values('count', 'tag__tag_name')
+    df = pd.DataFrame(data)
+    all_tags(df)
     return render(request, 'techs/home.html')
 
 def company_chart(request, company):
