@@ -1,3 +1,4 @@
+# tag 딕셔너리
 tag_dict = {
     '1on1': ['1on1', '원온원'],
     'a/b test': ['a b testing', 'a/b test', 'ab test', 'ab 테스트', 'ab-testing', 'abtest', 'ab테스트'],
@@ -249,4 +250,35 @@ tag_dict = {
     '일하는방법': ['일하는방법', '일하는방식'],
     '호출 명령어': ['호출 명령어', '호출명령어'],
     '핵심어 검출': ['핵심어 검출', '핵심어검출']
+}
+
+
+# 달을 숫자로 변환 하는 딕셔너리들
+month_dict1 = {
+    "Jan": "01",
+    "Feb": "02",
+    "Mar": "03",
+    "Apr": "04",
+    "May": "05",
+    "Jun": "06",
+    "Jul": "07",
+    "Aug": "08",
+    "Sep": "09",
+    "Oct": "10",
+    "Nov": "11",
+    "Dec": "12"
+    } 
+month_dict2 = {
+    "January": "01",
+    "February": "02",
+    "March": "03",
+    "April": "04",
+    "May": "05",
+    "June": "06",
+    "July": "07",
+    "August": "08",
+    "September": "09",
+    "October": "10",
+    "November": "11",
+    "December": "12"
 }
