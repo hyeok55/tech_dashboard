@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 전체 버튼을 클릭했을 때의 처리
     allButton.addEventListener("click", function () {
+        companyList.innerHTML="";
+        chartContainer.innerHTML="";
         fetch ("visualization_all/")
             .then(response => response.json())
             .then(data => {
