@@ -18,6 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    const btn1 = document.getElementById("all-button");
+    const btn2 = document.getElementById("company-button");
+
+    function allClick() {
+        btn1.classList.add("active");
+        btn2.classList.remove("active");
+    }
+
+    function companyClick() {
+        btn1.classList.remove("active");
+        btn2.classList.add("active");
+    }
+
+    btn1.addEventListener("click", allClick);
+    btn2.addEventListener("click", companyClick);
+
 
     //대시보드 이벤트 처리
     const allButton = document.getElementById("all-button");
@@ -34,12 +50,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         chartContainer.innerHTML="";
         chartContainer.appendChild(img);
-
+        
         // fetch ("visualization_all/")
         //     .then(response => response.json())
         //     .then(data => {
         //         // Plotly.newplot('chart-container', data.plot_div, {});
-        //         chartContainer.innerHTML = data.plot_div;
+        //         var fig = JSON.parse(data.plot_div);
+        //         Plotly.newPlot('chart-container', fig.data, fig.layout);
+        //         // chartContainer.innerHTML = data.plot_div;
         //     })
         //     .catch(error => console.error('Error: ', error))
 
