@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-
 from django.shortcuts import render
 from .models import *
 from django.shortcuts import redirect
 from django.db.models import F
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, JsonResponse
-from .visualization import *
 import csv
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
@@ -15,9 +12,8 @@ from django.conf import settings
 import os
 from django.core.exceptions import ObjectDoesNotExist
 from datetime import datetime
-import logging
-import json
-from django.core.serializers.json import DjangoJSONEncoder
+import plotly.express as px
+import pandas as pd
 
 
 ##회원가입
@@ -227,7 +223,6 @@ def all_chart(request):
     tag_df = pd.DataFrame.from_records(Post_tag.objects.all().values('tag__tag_name').distinct())
     tag_df.drop(tag_df[tag_df['tag__tag_name'] == ''].index, inplace=True)
     count = pd.DataFrame(tag.groupby('tag__tag_name').size().reset_index(name='count'))
-    # count = count.dropna(subset=['tag__tag_name'])
     top_20 = count.sort_values(by='count', ascending=False).head(20)
     all_df = pd.merge(tag_df, top_20, on='tag__tag_name')
     fig = px.bar(
@@ -239,36 +234,48 @@ def all_chart(request):
         color='tag__tag_name'
     )
     fig.update_layout(
-    width = 1000,
-    height = 800,
-    xaxis={'categoryorder':'total descending'},  # 빈도수가 높은 순으로 정렬
-    yaxis_title='Tags'  # y축 제목 설정
+        height = 1000,
+        yaxis={'categoryorder':'total ascending'},  # 빈도수가 높은 순으로 정렬
+        yaxis_title='Tags',  # y축 제목 설정
+        paper_bgcolor='#333', # 차트 바깥쪽 배경색
+        plot_bgcolor='#333', # 차트 안쪽 배경색
+        font = {'color':'white'},  # 전체 글자(폰트) 색상
     )
-    # plot_div = fig.to_html(full_html=False, include_plotlyjs=True)
-    plot_div = fig.to_json()
-    fig.show()
 
-    logging.info('Sending plot data...')
+    plot_div = fig.to_json()
+
+    print('Sending plot data...')
     return JsonResponse({'plot_div': plot_div})
 
-    # return render(request, 'techs/all.html', context={'plot_div':plot_div})
 
-
-
-
-# def all_chart(request):
-#     tag_df = pd.DataFrame(list(Company_Tag.objects.all().values('tag')))
-#     count_df = pd.DataFrame(list(Company_Tag.objects.all().values('count')))
-#     df = 
-#     data = Company_Tag.objects.values('count', 'tag__tag_name')
-#     df = pd.DataFrame(data)
-#     all_tags(df)
-#     return render(request, 'techs/home.html')
+def home(request):
+    return render(request, 'home.html')
 
 def company_chart(request, company):
-    company_tags(company)
-    return render(request, 'techs/home.html')
+    tag = pd.DataFrame.from_records(Company_Tag.objects.filter(company__company_name='{}'.format(company)).values('tag__tag_name'))
+    count = pd.DataFrame.from_records(Company_Tag.objects.filter(company__company_name='{}'.format(company)).values('tag__tag_name', 'count'))
+    company_df = pd.merge(tag, count, on='tag__tag_name')
+    company_df.drop(company_df[company_df['tag__tag_name'] == ''].index, inplace=True)
+    top_20 = company_df.sort_values(by='count', ascending=False).head(20)
+    fig = px.bar(
+        top_20,
+        x='count',
+        y='tag__tag_name',
+        title='Tag frequency in {} posts'.format(company),
+        labels={'count':'Frequency', 'tag__tag_name':'Tags'},
+        color='tag__tag_name'
+    )
+    fig.update_layout(
+        height = 1000,
+        yaxis={'categoryorder':'total ascending'},  # 빈도수가 높은 순으로 정렬
+        yaxis_title='Tags',  # y축 제목 설정
+        paper_bgcolor='#333', # 차트 바깥쪽 배경색
+        plot_bgcolor='#333', # 차트 안쪽 배경색
+        font = {'color':'white'},  # 전체 글자(폰트) 색상
+    )
 
-def company_name(request):
-    select_company = Company.objects.values_list('company_name', flat=True).distinct()
-    return render(request, 'techs/home.html', {'select_company': select_company})
+    company_div = fig.to_json()
+
+    print('Sending plot data...')
+    return JsonResponse({'company_div': company_div})
+

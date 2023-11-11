@@ -15,7 +15,7 @@ urlpatterns = [
     path('logout/', user_logout, name='logout'),
     path('save', views.save_csv_to_model, name='save'),
     path('visualization_all/', views.all_chart, name='all_chart'),
-    # path('company_list/', views.company_list, name='company_list')
+    path('company_chart/<str:company>', views.company_chart, name='company_chart')
 
 ]
 
