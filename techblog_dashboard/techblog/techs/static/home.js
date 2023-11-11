@@ -18,37 +18,44 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    const btn1 = document.getElementById("all-button");
+    const btn2 = document.getElementById("company-button");
+
+    function allClick() {
+        btn1.classList.add("active");
+        btn2.classList.remove("active");
+    }
+
+    function companyClick() {
+        btn1.classList.remove("active");
+        btn2.classList.add("active");
+    }
+
+    btn1.addEventListener("click", allClick);
+    btn2.addEventListener("click", companyClick);
+
 
     //대시보드 이벤트 처리
     const allButton = document.getElementById("all-button");
     const companyButton = document.getElementById("company-button");
     const chartContainer = document.getElementById("chart-container");
-    // const companyList = document.getElementById("company-list")
+    const companyList = document.getElementById("company-list");
 
     // 전체 버튼을 클릭했을 때의 처리
     allButton.addEventListener("click", function () {
-        var img = document.createElement("img");
-        img.src="/static/chart/all.png"
-        img.style.height="1100px";
-        img.style.objectFit="cover";
-
-        chartContainer.innerHTML="";
-        chartContainer.appendChild(img);
-
-        // fetch ("visualization_all/")
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         // Plotly.newplot('chart-container', data.plot_div, {});
-        //         chartContainer.innerHTML = data.plot_div;
-        //     })
-        //     .catch(error => console.error('Error: ', error))
-
-        
+        fetch ("visualization_all/")
+            .then(response => response.json())
+            .then(data => {
+                var fig = JSON.parse(data.plot_div);
+                Plotly.newPlot('chart-container', fig.data, fig.layout);
+            })
+            .catch(error => console.error('Error: ', error))
     });
 
 //     // // 기업별 버튼을 클릭했을 때의 처리
     companyButton.addEventListener("click", function () {
-        chartContainer.innerHTML = `
+        chartContainer.innerHTML="";
+        companyList.innerHTML = `
             <div class="company-list">
                 <button id="gangnam-button">강남언니</button>
                 <button id="naver-button">네이버</button>
@@ -70,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <button id="skplanet-button">SK플래닛</button>
             </div>
         `;
-        console.log('print hi');
 
         // fetch ("company_list/")
         //     .then(response => response.json)
@@ -87,161 +93,169 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-// companyList.addEventListener("click", function(event) {
-//     const clickedButton = event.target;
-//     if(clickedButton.classList.contains("company-buttion")) {
-//         const companyName = clickedButton.getAttribute("data-company-name");
-//         alert("selected company: ", companyName);
-//     }
-// });
-
-
-//     // 특정정기업 버튼 클릭했을시 처리
-    chartContainer.addEventListener("click", function (event) {
+    // 특정기업 버튼 클릭했을시 처리
+    companyList.addEventListener("click", function (event) {
         if (event.target.id === "gangnam-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/강남언니.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/강남언니")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "naver-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/네이버.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/네이버")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "danggn-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/당근.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/당근")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "devocean-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/데보션.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
-
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
+            fetch ("company_chart/데보션")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
+            
         } else if (event.target.id === "line-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/라인.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/라인")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "musinsa-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/무신사.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/무신사")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "bank-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/뱅크샐러드.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/뱅크샐러드")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "socar-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/쏘카.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/쏘카")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "watcha-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/왓챠.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/왓챠")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "yogiyo-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/요기요.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/요기요")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "woowa-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/우아한형제들.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/우아한형제들")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "est-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/이스트소프트.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/이스트소프트")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "kakao-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/카카오.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/카카오")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "kakaoenter-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/카카오엔터프라이즈.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/카카오엔터프라이즈")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "kakaopay-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/카카오페이.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/카카오페이")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "coupang-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/쿠팡.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/쿠팡")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "hc-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/하이퍼커넥트.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
+            fetch ("company_chart/하이퍼커넥트")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
 
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
         } else if (event.target.id === "skplanet-button") {
-            var img = document.createElement("img");
-            img.src = '/static/chart/SK플래닛.png';
-            img.style.height="1100px";
-            img.style.objectFit="cover";
-
-            chartContainer.innerHTML="";
-            chartContainer.appendChild(img);
+            fetch ("company_chart/SK플래닛")
+                .then(response => response.json())
+                .then(data => {
+                    var fig = JSON.parse(data.company_div);
+                    Plotly.newPlot('chart-container', fig.data, fig.layout);
+                })
+                .catch(error => console.error('Error: ', error))
         }
         
     });

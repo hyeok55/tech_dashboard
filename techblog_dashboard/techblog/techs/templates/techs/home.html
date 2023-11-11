@@ -8,7 +8,6 @@
     <meta name="description" content="문서설명">
     <meta name="author" content="programmers_devcourse_Teamproject1_Team1-2">
     <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
-    <script src="{% static 'home.js' %}"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script>
@@ -77,15 +76,12 @@
                 <h1>IT 직군 트렌드 분석</h1>
             </div>
             <div class="dashboard-buttons">
-                <button id="all-button" class="active">전체</button>
+                <button id="all-button">전체</button>
                 <button id="company-button">기업별</button>
-                <div id="chart-container">
-                </div>
             </div>
-            <!-- <div id="chart-container">
-            </div> -->
+            <div id="company-list"></div>
+            <div id="chart-container"></div>
         </section>
-        <script src="{% static 'home.js' %}"></script>
         <section class="content-list">
             {% if postings %}
             <ul>
@@ -140,7 +136,7 @@
 
     <footer> <!-- 6. 페이지의 부가적인 정보 -->
     </footer>
-
+    <script src="{% static 'home.js' %}"></script>
 </body>
 
 </html>
