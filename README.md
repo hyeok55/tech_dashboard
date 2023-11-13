@@ -5,7 +5,7 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 
 # Demo video
 
-[![SeeNear](https://user-images.githubusercontent.com/54880474/229173623-2b5241ae-dc6c-488f-8b63-a9108537ed76.jpg)](https://youtu.be/eu4VRWWW2r4)  
+[Demo video](https://www.canva.com/design/DAFzszeqXbI/AupPsP-IXNDfOIGxVlGINg/watch?utm_content=D[…]re_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
 
 ------------
