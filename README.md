@@ -4,7 +4,7 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 ------------
 
 # Demo video
-
+[업로드중..](blob:https://velog.io/9c6cb1be-fc8a-4667-a586-0672ccd3cc94)
 [Demo video](https://www.canva.com/design/DAFzszeqXbI/AupPsP-IXNDfOIGxVlGINg/watch?utm_content=D[…]re_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
 
