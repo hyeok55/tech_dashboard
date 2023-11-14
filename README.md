@@ -4,7 +4,7 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 ------------
 
 # Demo video
-![](https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png){: width="100" height="100"}
+<img src="https://user-images.githubusercontent.com/51365114/119627750-716f3100-be47-11eb-8e83-686b23c2c161.png  width="200" height="400"/>
 [Demo video](https://www.canva.com/design/DAFzszeqXbI/AupPsP-IXNDfOIGxVlGINg/watch?utm_content=D[…]re_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
 
