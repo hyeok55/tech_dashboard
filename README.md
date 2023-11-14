@@ -4,8 +4,8 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 ------------
 
 # Demo video
-<img src="https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png" width="200" height="20"/>
-[Demo video](/1-2팀%20Demo_video.mp4)
+<img src="https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png" width="200" height="200"/>
+[Demo video](1-2팀 Demo_video.mp4)
 
 ------------
 
