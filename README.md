@@ -1,11 +1,11 @@
 # DEV Project1
+<img src="https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png" width="200" height="200"/>
 Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 
 ------------
 
 # Demo video
-<img src="https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png" width="200" height="200"/>
-<iframe width="560" height="315" src="1-2팀 Demo_video.mp4" frameborder="0" allowfullscreen></iframe>
+[Demo video](https://www.canva.com/design/DAFzszeqXbI/AupPsP-IXNDfOIGxVlGINg/watch?utm_content=D[…]re_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
 ------------
 
