@@ -56,21 +56,6 @@ def user_logout(request):
     return redirect('show_all')
 
 
-def read_csv(file_name):
-    with open(file_name, 'r') as csv_file:
-        reader = csv.reader(csv_file)
-        return list(map(int, list(reader)[1]))
-
-def write_csv(now_list, file_name):
-    fields=['pk']
-    rows=[list(set(now_list))]
-    with open(file_name, 'w', newline='') as f:
-        write = csv.writer(f) 
-        write.writerow(fields) 
-        write.writerows(rows)
-
-like_list = read_csv("../liked.csv")
-
 def show_all(request):
     islogin=False
     user_likes_instance=None

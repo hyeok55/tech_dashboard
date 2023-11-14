@@ -1,0 +1,49 @@
+﻿title,date,tags,company,link
+싱글벙글 회원 서비스 성능 튜닝기,2023.07.22,accounts#service engineering#performance tuning,쏘카,https://tech.socarcorp.kr/dev/2023/07/22/member-service-performance-tuning-01.html
+쏘카의 대규모 인증토큰 트래픽 대응 : 프로젝트 플래닝,2023.07.07,accounts#planning#service engineering,쏘카,https://tech.socarcorp.kr/dev/2023/07/07/handling-authentication-token-traffic-02.html
+쏘카의 대규모 인증토큰 트래픽 대응 : 개발기,2023.06.27,accounts#traffic#backend#developer#service engineering,쏘카,https://tech.socarcorp.kr/dev/2023/06/27/handling-authentication-token-traffic-01.html
+나는 어떤 강점이 있는 QA 엔지니어일까?,2023.05.15,qa#qa skills,쏘카,https://tech.socarcorp.kr/qa/2023/05/15/qa-skills-marktang.html
+쏘카에서 기술 블로그를 운영하는 방법,2023.02.15,blog,쏘카,https://tech.socarcorp.kr/data/2023/02/15/how-to-organize-tech-blog.html
+노코드 자동화 툴로 일잘러 데이터 분석가 되기,2023.02.01,data#data analyst#nocode#automation#zapier#integromat#make,쏘카,https://tech.socarcorp.kr/data/2023/02/01/nocode-tool.html
+FMS(차량 관제 시스템) 데이터 파이프라인 구축기 2편. 신뢰성 높은 데이터를 위한 테스트 환경 구축기,2023.01.25,data#data engineering#iot streaming#data platform#data reliability#data quality,쏘카,https://tech.socarcorp.kr/data/2023/01/25/build-fms-data-pipeline-2.html
+FMS(차량 관제 시스템) 데이터 파이프라인 구축기 1편. 스트리밍/배치 파이프라인 개발기,2023.01.17,data#data engineering#iot streaming#data platform#kafka connect#aws,쏘카,https://tech.socarcorp.kr/data/2023/01/17/build-fms-data-pipeline-1.html
+DBA의 AWS re:Invent 2022 참석 후기,2023.01.16,aws#dba#database,쏘카,https://tech.socarcorp.kr/data/2023/01/16/aws-reinvent.html
+전사 구성원들이 사용하는 배치 데이터 플랫폼 만들기 - Airflow Advanced,2022.11.09,data#data engineering#airflow#data platform,쏘카,https://tech.socarcorp.kr/data/2022/11/09/advanced-airflow-for-databiz.html
+신입 백엔드 개발자의 우당탕탕 엔지니어링 온보딩팀 교육 후기,2022.10.17,backend#front end#developer#service engineering#onboarding,쏘카,https://tech.socarcorp.kr/dev/2022/10/17/onboarding-service-engineering.html
+React Custom Icon Component 개발기,2022.09.06,web#front end#react#design system,쏘카,https://tech.socarcorp.kr/dev/2022/09/06/react-icon-component.html
+주니어 PM의 '중요한 고객' 발굴하기,2022.08.26,product#product manager,쏘카,https://tech.socarcorp.kr/product/2022/08/26/important-customer.html
+"데이터에 신뢰성과 재사용성까지, Analytics Engineering with dbt",2022.07.25,data engineering#analytics engineering,쏘카,https://tech.socarcorp.kr/data/2022/07/25/analytics-engineering-with-dbt.html
+쏘카 예약을 효율적으로 - 수학적 모델링을 활용한 쏘카 예약 테트리스,2022.06.10,data#optimization,쏘카,https://tech.socarcorp.kr/data/2022/06/10/reservation-tetris.html
+쏘카 PM의 차량 예약 퍼널 단계 개선기(feat. AB TEST),2022.06.02,product#pm#data,쏘카,https://tech.socarcorp.kr/product/2022/06/02/reservation-funnel-improvement-with-abtest.html
+딥러닝 기반 세차 인증 자동화 모델 개발 이야기,2022.04.18,applied research scientist#deep learning#ai,쏘카,https://tech.socarcorp.kr/data/2022/04/18/develop-model-classifying-washed-car.html
+쏘카 AI팀의 Applied Research Scientist는 어떤 일을 하나요?,2022.04.05,applied research scientist#deep learning#ai,쏘카,https://tech.socarcorp.kr/data/2022/04/05/role-of-applied-research-scientist-at-socar.html
+CES 2022 - 미래 모빌리티를 만나다,2022.03.31,mobility#ces,쏘카,https://tech.socarcorp.kr/product/2022/03/31/ces2022-review-by-gigi.html
+쏘카 QA는 무슨 일을 하고 어떻게 일하나요?,2022.03.18,qa#onboarding,쏘카,https://tech.socarcorp.kr/qa/2022/03/18/probationary-period_QA.html
+데이터 디스커버리 플랫폼 도입기 - 2편. GKE에 Datahub 구축하기,2022.03.16,data#metadata platform#data engineering,쏘카,https://tech.socarcorp.kr/data/2022/03/16/metdata-platform-02.html
+데이터 디스커버리 플랫폼 도입기 - 1편. 데이터 디스커버리란?(feat. Datahub VS Amundsen 비교 분석),2022.02.25,data#data engineering,쏘카,https://tech.socarcorp.kr/data/2022/02/25/data-discovery-platform-01.html
+쏘카 PM(Product Manager)은 어떻게 성장하나요?,2022.02.23,product manager,쏘카,https://tech.socarcorp.kr/product/2022/02/23/growing-up-together-with-the-pm-team.html
+쏘카의 관제 장치(Telematics Device)가 하는 일,2022.02.15,iot,쏘카,https://tech.socarcorp.kr/mobility/2022/02/15/control-device-with-car-sharing.html
+차량용 단말을 위한 IoT 파이프라인 구축기 (feat. Kafka) #2,2022.02.09,iot#data#data engineering,쏘카,https://tech.socarcorp.kr/mobility/2022/02/09/socar-iot-pipeline-2.html
+Android Studio 플러그인으로 코드 자동 리팩토링하기,2022.02.03,kotlin#intellij#android studio#plugin,쏘카,https://tech.socarcorp.kr/dev/2022/02/03/refactoring-with-intellij-plugin.html
+자동차 배터리를 더 소중하게 공학적으로 관리하기 #2,2022.01.18,mechanical engineering#chemical engineering#data,쏘카,https://tech.socarcorp.kr/mobility/2022/01/18/socar-mobility-lab-battery-management-process-second-stage.html
+차량용 단말을 위한 IoT 파이프라인 구축기 #1,2022.01.06,iot,쏘카,https://tech.socarcorp.kr/mobility/2022/01/06/socar-iot-pipeline-1.html
+쏘카 신입 데이터 엔지니어 디니의 4개월 회고,2021.12.28,data#data engineering,쏘카,https://tech.socarcorp.kr/data/2021/12/28/data-engineering-team-onboarding.html
+"수요일엔 수요미식회, 금요일은 개발밋업회",2021.11.01,culture,쏘카,https://tech.socarcorp.kr/dev/2021/11/01/socar-developer-meetup.html
+Java Map의 확장 인터페이스 NavigableMap 이야기,2021.10.19,server#java,쏘카,https://tech.socarcorp.kr/dev/2021/10/19/sub-interfaces-navigablemap.html
+쏘카 안드로이드 팀 신입 개발자 미뇽의 입사기,2021.08.19,andorid,쏘카,https://tech.socarcorp.kr/dev/2021/08/19/join-in-socar-android.html
+쏘카 백오피스 팀 내 공통 코드(Common Code) 관리 변천사,2021.08.17,공통코드관리,쏘카,https://tech.socarcorp.kr/dev/2021/08/17/common-code-management.html
+자동차 배터리를 더 소중하게 공학적으로 관리하기 #1,2021.07.20,mechanical engineering#chemical engineering#data,쏘카,https://tech.socarcorp.kr/mobility/2021/07/20/socar-mobility-lab-battery-management-process-first-stage.html
+쏘카 데이터 그룹 - Airflow와 함께한 데이터 환경 구축기(feat. Airflow on Kubernetes),2021.06.01,data#data engineering,쏘카,https://tech.socarcorp.kr/data/2021/06/01/data-engineering-with-airflow.html
+쏘카 데이터 그룹 - 데이터 엔지니어링 팀이 하는 일,2021.03.24,data#data engineering,쏘카,https://tech.socarcorp.kr/data/2021/03/24/what-socar-data-engineering-team-does.html
+CES 2021을 지켜보며 다시 돌아보는 CES 2020 참가 후기,2021.01.12,conference,쏘카,https://tech.socarcorp.kr/dev/2021/01/12/ces2020-review.html
+"[SOCAR FRAME 만들기 #3] 컴포넌트, 제대로 만들어 쉽게 쓰자! (2탄)",2020.09.08,design system,쏘카,https://tech.socarcorp.kr/design/2020/09/08/component-02.html
+쏘카 데이터 그룹 - 데이터 사이언티스트 인턴 9개월 후기,2020.08.19,data,쏘카,https://tech.socarcorp.kr/data/2020/08/19/socar-data-group-intern-review.html
+"[SOCAR FRAME 만들기 #3] 컴포넌트, 제대로 만들어 쉽게 쓰자! (1탄)",2020.07.31,design system,쏘카,https://tech.socarcorp.kr/design/2020/07/31/component-01.html
+[SOCAR FRAME 만들기 #2] 다크 모드 받고 디자인 시스템 더블로 가! (2탄),2020.07.22,design system,쏘카,https://tech.socarcorp.kr/design/2020/07/22/dark-mode-02.html
+[SOCAR FRAME 만들기 #2] 다크 모드 받고 디자인 시스템 더블로 가! (1탄),2020.07.10,design system,쏘카,https://tech.socarcorp.kr/design/2020/07/10/dark-mode-01.html
+[SOCAR FRAME 만들기 #1] 쏘카의 디자인 시스템 맛보기,2020.06.23,design system,쏘카,https://tech.socarcorp.kr/design/2020/06/23/socar-design-system-01.html
+딥러닝 모델 Serving 간단 구축기,2020.03.10,deep learning#serving#sqs#kubernetes#rancher,쏘카,https://tech.socarcorp.kr/data/2020/03/10/ml-model-serving.html
+Semantic Segmentation을 활용한 차량 파손 탐지 딥러닝 모델 개발기,2020.02.13,data#deep learning,쏘카,https://tech.socarcorp.kr/data/2020/02/13/car-damage-segmentation-model.html
+O'reilly Strata Data Conference New York 2019 후기,2020.01.12,machine learning,쏘카,https://tech.socarcorp.kr/data/2020/01/12/oreilly-strata-newyork-2019-review.html
+AWS VPC에서 FQDN Outbound Control,2019.09.02,outbound#aviatrix#fqdn,쏘카,https://tech.socarcorp.kr/security/2019/09/02/aviatrix-fqdn.html
+Keycloak를 이용한 SSO 구축(web + wifi + ssh),2019.07.31,keycloak#sso,쏘카,https://tech.socarcorp.kr/security/2019/07/31/keycloak-sso.html

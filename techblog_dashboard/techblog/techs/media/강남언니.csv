@@ -1,0 +1,68 @@
+﻿title,date,tags,company,link
+[SaaS] 프론트엔드 개발자가 API를 설계하는 이유,2023.11.03,idl#google protocol buffer#인터페이스 관리,강남언니,https://blog.gangnamunni.com/post/saas-why-do-frontend-developers-design-api
+강남언니가 비즈니스 파트너와 함께 성장하는 방법,2023.09.14,플랫폼 비즈니스#영업전략#파트너성장#성장 플레이북,강남언니,https://blog.gangnamunni.com/post/growup-with-partner
+[SaaS] Enterprise 환경으로 확장하기 쉬운 Multi-Tenancy 서비스 구축하기,2023.08.14,mongodb#aws eks#docker#gomplate#kubernetes,강남언니,https://blog.gangnamunni.com/post/saas-enterprise-multi-tenancy
+[SaaS] Private AWS EKS Cluster With Github Actions,2023.08.14,git#github actions#eks#self-hosted runner,강남언니,https://blog.gangnamunni.com/post/saas-private-aws-eks
+[SaaS] Micro Frontends를 위해 Module Federation 적용하기,2023.08.14,micro-frontends#module-federation#webpack#react,강남언니,https://blog.gangnamunni.com/post/saas-microfrontends
+[SaaS] 병원향 B2B SaaS 제품에 도전합니다,2023.08.13,b2b#saas#solutions#crm#multi-tenancy,강남언니,https://blog.gangnamunni.com/post/saas-prologue
+B2B 프로덕트에서 고객의 흔적 찾기,2023.08.07,design#b2b#product#ux#product designer,강남언니,https://blog.gangnamunni.com/post/design-in-b2bproducts
+분산 시스템에서 메시지 안전하게 다루기,2023.07.06,transactional outbox#message,강남언니,https://blog.gangnamunni.com/post/transactional-outbox
+실험하려다 파편화 부채를 청산했어요.,2023.06.20,design#product#ux#ui,강남언니,https://blog.gangnamunni.com/post/design-consistency
+변별력을 200% 더 높인 개발자 채용 방법: 코드 리뷰 테스트,2023.05.17,recruit#coding test#코드 리뷰 테스트,강남언니,https://blog.gangnamunni.com/post/code-review-test
+강남언니에는 비즈니스 자가진단 키트가 있다,2023.04.26,business#data#사업관리,강남언니,https://blog.gangnamunni.com/post/business-metric
+강남언니팀의 핵심가치 브랜딩하기,2023.03.06,,강남언니,https://blog.gangnamunni.com/post/cve_branding
+트랜잭션은 도메인 모델이 아니다,2023.02.06,inversion of control#domain driven design#transaction,강남언니,https://blog.gangnamunni.com/post/isolate-transaction-from-domain-model
+PO가 비즈니스 전략을 제품에 녹이는 방법,2023.01.05,지역확장#po#제품개선#전략#강남언니#search#홈,강남언니,https://blog.gangnamunni.com/post/how-to-reflect-business-strategy-in-your-product
+"목적을 생각하면, 일하는 방식이 바뀐다",2022.06.13,일하는방법#organizational culture,강남언니,https://blog.gangnamunni.com/post/whywework
+강남언니가 고객의 문제를 찾는 방법,2022.03.16,고객의문제#정성적#정량적#voc#ut#data,강남언니,https://blog.gangnamunni.com/post/userproblem
+고객의 문제를 작고 빠르게 해결하기 위해 필요한 3가지,2022.03.11,,강남언니,https://blog.gangnamunni.com/post/how-to-build-a-product
+우리는 고객을 전혀 모르고 있었어요.. UT를 하기 전까지는요..!,2022.03.07,ut#usabilitytest#usabilitytest#usabilitytest,강남언니,https://blog.gangnamunni.com/post/usability-test-team
+"PO, 프로덕트 디자이너가 개발 아키텍처까지 알아야하나요?",2022.01.26,design#po#product-owner#architecture#product designer,강남언니,https://blog.gangnamunni.com/post/Architecture-sync
+원칙에 극도로 몰입한 인턴,2021.11.11,organizational culture,강남언니,https://blog.gangnamunni.com/post/corevalues
+외부 툴 변경에 휘둘리지 않는 서버 코드 작성기,2021.08.19,dip#dependency inversion#dependency inversion principle#의존성 역전 원칙,강남언니,https://blog.gangnamunni.com/post/dependency-inversion-principle
+최소 비용으로 때깔나는 브랜드 영상광고 만들기,2021.04.20,브랜드마케팅#광고#유튜브,강남언니,https://blog.gangnamunni.com/post/brandfilm-making
+"RxJava to Coroutine, 네트워크 처리에 코루틴을 적용했더니?!",2021.04.20,andorid#rxjava#coroutine#kotlin#retrofit#okhttp,강남언니,https://blog.gangnamunni.com/post/android-coroutine
+강남언니 일러스트 시스템 제작기,2021.02.25,designsystem#illustsystem#branding,강남언니,https://blog.gangnamunni.com/post/illust-system-for-gangnamunni
+실패를 통해 배우는 AB테스트,2021.02.17,a/b test#a/b test#experiment#통제변수,강남언니,https://blog.gangnamunni.com/post/AB-test-Baisc
+사용자들의 놀이터에서 비즈니스 임팩트 내기,2021.02.15,community#design#product design#businessimpact,강남언니,https://blog.gangnamunni.com/post/community-business-impact
+나의 대충 그려졌고 소중한 와이어프레임,2021.01.27,wireframe#design#communication#product,강남언니,https://blog.gangnamunni.com/post/communication-with-wireframe
+디자인 챕터의 새롭고 신나는 온라인 회고 방법,2021.01.09,디자인#retrospective#covid-19#untact,강남언니,https://blog.gangnamunni.com/post/Retrospective
+Docker Compose 로 local 개발 환경 쉽게 관리하기,2020.10.28,,강남언니,https://blog.gangnamunni.com/post/docker-compose-for-local-env
+"Flyway 로 Java 에서 DB schema, seed 관리하기",2020.10.19,spring#java#database,강남언니,https://blog.gangnamunni.com/post/introducing-flyway
+프로덕트 디자이너가 PO를 한다면?,2020.09.15,product designer#product-owner#po,강남언니,https://blog.gangnamunni.com/post/product-design-and-product-owner
+MVVM Anti Pattern,2020.09.03,andorid#mvvm,강남언니,https://blog.gangnamunni.com/post/mvvm_anti_pattern
+UT(사용성 테스트)로 고객 이해하기,2020.07.31,design#ut#usabilitytest#usabilitytest#usabilitytest,강남언니,https://blog.gangnamunni.com/post/usability-test
+Annotation 안에서 무슨 일이 일어나는 거지? 2편,2020.07.15,,강남언니,https://blog.gangnamunni.com/post/kotlin-annotation-codegeneration
+"Spring 의 동기, 비동기, 배치 처리시 항상 context 를 유지하고 로깅하기",2020.07.09,spring#async#logging#mdc#threadlocal#taskdecorator#context#batch#thread,강남언니,https://blog.gangnamunni.com/post/mdc-context-task-decorator
+Hibernate entity 에 Lombok 사용 시  stackoverflow 혹은 LazyInitializationException 이슈,2020.07.02,hibernate#lombok#annotation#data#orm,강남언니,https://blog.gangnamunni.com/post/hibernate_lombok_lazy
+"AWS RDS 에서 MySql 한글 및 이모지 처리 (utf8, utf8mb4)",2020.06.20,mysql#aws#rds#utf8#utf8mb4#emoji#emoji,강남언니,https://blog.gangnamunni.com/post/aws-rds-mysql-utf8mb4
+디자인 챕터는 왜 존재할까?,2020.06.19,design#mission#vision,강남언니,https://blog.gangnamunni.com/post/mission-vision-of-designchapter
+MySQL 그날의 끝 시간(23:59:59) 저장 시 주의 할 점,2020.06.15,mysql#datetime#timestamp,강남언니,https://blog.gangnamunni.com/post/mysql-endtime-timestamp
+UI 텍스트 가이드라인 제작기,2020.06.03,ui text guideline#design system,강남언니,https://blog.gangnamunni.com/post/ui-text-guideline
+ViewPager2 파헤치기,2020.05.29,viewpager#viewpager#andorid,강남언니,https://blog.gangnamunni.com/post/viewpager2
+타입스크립트로 슬랙 앱(봇) 만들기 - 기초편,2020.05.27,slack#slack#typescript#slackbot#typescript#슬랙앱,강남언니,https://blog.gangnamunni.com/post/typescript-slack-bot
+Annotation 안에서 무슨 일이 일어나는 거지? 1편,2020.05.14,andorid,강남언니,https://blog.gangnamunni.com/post/kotlin-annotation
+스타트업에서 프로덕트 디자이너는 어떻게 일할까?,2020.05.07,product designer#agile#startup,강남언니,https://blog.gangnamunni.com/post/how_do_designers_work_at_startups
+git bisect 로 문제가 발생한 commit 빠르고 쉽게 찾기,2020.04.13,gitflow#git,강남언니,https://blog.gangnamunni.com/post/understanding_git_bisect
+TDDDD 안드로이드에서 가능할까?,2020.03.30,andorid#domain#test,강남언니,https://blog.gangnamunni.com/post/TDDDD_Android
+힐페TV - ViewModel을 무조건 믿을 수 있는 방법이 있다???(삐슝빠슝),2020.03.26,mvvm#rxswift#rxtest#xctest#ios,강남언니,https://blog.gangnamunni.com/post/HealingPaperTV-ViewModel-Test
+TDD x iOS,2020.03.24,ios#tdd,강남언니,https://blog.gangnamunni.com/post/TDDxiOS
+"GitFlow? 들어도 봤고, 쓰고도 있는데...",2020.03.23,gitflow#git,강남언니,https://blog.gangnamunni.com/post/understanding_git_flow
+더미텍스트 효율적이면서 의미있게 사용하기,2020.03.14,design#sketch,강남언니,https://blog.gangnamunni.com/post/dummy_text
+"개발자 여러분, 디자인시스템 지금 바로 도입하세요!",2020.03.14,design system#web,강남언니,https://blog.gangnamunni.com/post/welchis
+Spring Annotation 과 Reflection 을 활용해서 Entity의 여러 필드 한번에 수정하기,2020.03.08,spring#java#annotation#reflection#entity,강남언니,https://blog.gangnamunni.com/post/Annotation-Reflection-Entity-update
+Android Architecture Components를 활용하여 MVVM 적용하기,2020.03.01,andorid#architecture#aac,강남언니,https://blog.gangnamunni.com/post/aac_mvvm
+Replica 에 Write 가 된다고?,2020.02.05,devops#data analytics#replica#rds,강남언니,https://blog.gangnamunni.com/post/mysql_writable_replica_on_aws
+컴포넌트 디자인으로 재사용성 극대화하기,2019.12.11,design system#component design,강남언니,https://blog.gangnamunni.com/post/Maximize-reusability-with-component-design
+안드로이드 MotionLayout,2019.12.03,andorid#motionlayout,강남언니,https://blog.gangnamunni.com/post/MotionLayout
+검블유 속에 강남언니가?,2019.09.16,culture#platform#검블유,강남언니,https://blog.gangnamunni.com/post/gngsiter_and_www
+여러개의 DB 작업을 동시에 수행하고 결과를 합쳐서 보내줘야 할 때,2019.09.03,spring#async#hibernate#thread#transaction,강남언니,https://blog.gangnamunni.com/post/Spring-Async-Hibernate-DB
+"날 닮은 너를, 부족한 너를.",2019.09.01,java#array#list#collection,강남언니,https://blog.gangnamunni.com/post/Arrays-arrayList-ArrayList
+Coroutine Basic,2019.08.20,coroutine#kotlin#andorid,강남언니,https://blog.gangnamunni.com/post/coroutine_basic
+Homebrew 로 Mac 한 방에 셋업하기,2019.08.18,tool#setting#mac,강남언니,https://blog.gangnamunni.com/post/brew_cask_mas
+플러터 풀로 털기,2019.08.16,flutter#dart,강남언니,https://blog.gangnamunni.com/post/flutter-full-ter
+SwiftUI + Combine 핥아보기,2019.07.29,swiftui#combine#wwdc2019,강남언니,https://blog.gangnamunni.com/post/SwiftUI+CombineQuickLook
+힐페 디자인챕터에서 Abstract 똑똑하게 사용하는 방법,2019.07.08,design#abstract#design system#sketch,강남언니,https://blog.gangnamunni.com/post/how-to-use-abstract
+Abstract 기본 사용법,2019.07.08,design#abstract#design system#sketch,강남언니,https://blog.gangnamunni.com/post/abstract-guide
+Privacy Changes in Android Q#2,2019.07.02,privacy change#andorid,강남언니,https://blog.gangnamunni.com/post/privacy-changes-in-android-q-2
+Privacy Changes in Android Q#1,2019.07.01,privacy change#andorid,강남언니,https://blog.gangnamunni.com/post/privacy-changes-in-android-q-1
