@@ -4,7 +4,7 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 ------------
 
 # Demo video
-![](https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png)
+![](https://velog.velcdn.com/images/jg31109/post/2eeba08f-7437-46af-8ce5-e7e2ebae25ca/image.png){: width="100" height="100"}
 [Demo video](https://www.canva.com/design/DAFzszeqXbI/AupPsP-IXNDfOIGxVlGINg/watch?utm_content=D[…]re_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
 
@@ -43,14 +43,15 @@ Techblog를 크롤링하여 시각화 및 대시보드 구축 웹 프로젝트
 ### Web(Django)
 
 - 프론트엔드
-    - 게시글 (김혁)
+    - 게시글 (최은서)
     - 시각화 (이보경)
 - 백엔드
     - 메인페이지 (김혁,최은서)
     - API 구상 (김혁,최은서)
     - 조회 (김혁,최은서)
     - 테스트 코드 작성 (김혁,최은서)
-    - DB 구축 및 연동 (최은서)
+    - DB 구축 및 연동 (김혁,최은서)
+    - 회원가입/로그인 (최은서)
 
 ## 사용 기술
 ### 백엔드
