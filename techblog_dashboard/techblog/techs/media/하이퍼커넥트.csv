@@ -1,0 +1,91 @@
+﻿title,date,tags,company,link
+1년 동안 Workload의 절반을 ARM64로 Migration하기,2023.07.25,arm64#kubernetes#graviton#aws,하이퍼커넥트,https://hyperconnect.github.io/2023/07/25/migrate-half-of-workload-in-a-year.html
+[Hyper and Now] 하이퍼커넥트® 렐 문화 탐구,2023.06.21,devrel,하이퍼커넥트,https://hyperconnect.github.io/2023/06/21/exploring-devrel-culture.html
+고성능 ML 백엔드를 위한 10가지 Python 성능 최적화 팁,2023.05.30,python#machine learning#optimization,하이퍼커넥트,https://hyperconnect.github.io/2023/05/30/Python-Performance-Tips.html
+Kubernetes 환경에서 Segmentation Fault 트러블슈팅하기 (Feat. Fluent Bit Contribution),2023.05.02,fluent-bit#gdb#debug#kafka#core#coredump#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2023/05/02/troubleshooting-fluent-bit-segmentation-fault.html
+ksqlDB Deep Dive,2023.03.20,ksqldb#kafka-streams,하이퍼커넥트,https://hyperconnect.github.io/2023/03/20/ksqldb-deepdive.html
+Junior 개발자의 글로벌 서비스 경험기 2탄,2023.01.30,andorid#junior,하이퍼커넥트,https://hyperconnect.github.io/2023/01/30/azar-android-junior-developer-view-2.html
+⚔ Learning with Noisy Labels by Efficient Transition Matrix Estimation to Combat Label Miscorrection,2023.01.27,machine learning#learning-with-noisy-labels,하이퍼커넥트,https://hyperconnect.github.io/2023/01/27/combating-noisy-labels.html
+Spring Session + Custom Session Repository 기반 세션 저장소의 메모리 누수 해결,2023.01.09,spring-session#session#memory-leak,하이퍼커넥트,https://hyperconnect.github.io/2023/01/09/redis-session.html
+글로벌 라이브 스트리밍을 지탱하는 하이퍼커넥트 미디어 서버 인프라를 소개합니다,2022.12.30,media-server#infra#webrtc,하이퍼커넥트,https://hyperconnect.github.io/2022/12/30/introduction-to-media-server.html
+머신러닝 모델 서빙 비용 1/4로 줄이기,2022.12.13,aws#inferentia#infra#cost#machine learning,하이퍼커넥트,https://hyperconnect.github.io/2022/12/13/infra-cost-optimization-with-aws-inferentia.html
+Spring Data Redis Repository 미숙하게 사용해 발생한 장애 극복기,2022.12.12,redis#spring-data-redis#secondary-index#ttl,하이퍼커넥트,https://hyperconnect.github.io/2022/12/12/fix-increasing-memory-usage.html
+CPaaS QA가 하는 일,2022.11.01,qa#testing,하이퍼커넥트,https://hyperconnect.github.io/2022/11/01/What-CPaaS-QA-does.html
+카프카 생태계 기반의 비즈니스 메트릭 생성하기,2022.10.14,ksqldb#kafka connect#kafka-streams,하이퍼커넥트,https://hyperconnect.github.io/2022/10/14/grafana-with-ksqlDB.html
+Spring WebClient에서 새어나가는 메모리 잡기,2022.10.07,spring#webflux#memory,하이퍼커넥트,https://hyperconnect.github.io/2022/10/07/troubleshoot-webclient-oom.html
+JVM + Container 환경에서 수상한 Memory 사용량 증가 현상 분석하기,2022.07.19,java#kubernetes#cgroup#webflux#memory,하이퍼커넥트,https://hyperconnect.github.io/2022/07/19/suspicious-jvm-memory-in-container.html
+머신러닝 어플리케이션을 위한 데이터 저장소 기술,2022.07.11,machine learning#data-store,하이퍼커넥트,https://hyperconnect.github.io/2022/07/11/data-stores-for-ml-apps.html
+Junior 개발자의 글로벌 서비스 경험기 1탄,2022.07.06,andorid#junior,하이퍼커넥트,https://hyperconnect.github.io/2022/07/06/azar-android-junior-developer-view.html
+개발자의 AWS 권한을 GitOps로 우아하게 관리하는 방법,2022.05.12,aws#sso#vpn#gitops#permission,하이퍼커넥트,https://hyperconnect.github.io/2022/05/12/aws-permission-management-using-gitops.html
+Tuist를 활용한 하쿠나 iOS 프로젝트 모듈화 적용하기,2022.04.19,ios#module,하이퍼커넥트,https://hyperconnect.github.io/2022/04/19/ios-modularization.html
+AWS 대회 2관왕한 사람이 푸는 우승 Know-Hows,2022.04.19,security#aws#game day#ctf,하이퍼커넥트,https://hyperconnect.github.io/2022/04/19/AWS-GameDay-Know-Hows.html
+Temporal Knowledge Distillation for On-device Audio Classification,2022.03.29,machine learning#deep-learning#on-device#audio-classification#knowledge-distillation#transformer,하이퍼커넥트,https://hyperconnect.github.io/2022/03/29/temporal-kd-ondevice-audio.html
+하쿠나 입장 API 개선하기 - 괴물 API 리팩토링과 성능개선하기,2022.03.14,testing#refactoring,하이퍼커넥트,https://hyperconnect.github.io/2022/03/14/develop-liveroom-entrance-on-hakuna.html
+신입이 만든 코드는 서버를 부숴.. 미디어 서버 테스터 개발기,2022.03.04,media-server#tester,하이퍼커넥트,https://hyperconnect.github.io/2022/03/04/media-server-tester.html
+제목은 React Native 도입이라고 하겠습니다. 근데 이제 Hakuna 앱에 곁들여진,2022.03.02,react native#ios#andorid,하이퍼커넥트,https://hyperconnect.github.io/2022/03/02/embedded-react-native.html
+Gerrit Code Review 도입하기,2022.02.28,git#gerrit#github actions#code review#rust#nom#rocket,하이퍼커넥트,https://hyperconnect.github.io/2022/02/28/gerrit-code-review-introduction.html
+ImagePullSecrets 없이 안전하게 Private Registry 사용하기!,2022.02.21,kubernetes#kubelet#bottlerocket,하이퍼커넥트,https://hyperconnect.github.io/2022/02/21/no-more-image-pull-secrets.html
+멈춰! 버그 멈춰! E2E 테스트로 버그 멈추기 Feat. Playwright,2022.01.28,web#testing,하이퍼커넥트,https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html
+이벤트 기반의 라이브 스트리밍 추천 시스템 운용하기,2022.01.24,machine learning#recommendation system#event#microservice,하이퍼커넥트,https://hyperconnect.github.io/2022/01/24/event-driven-recsys.html
+React Native에서 iOS 빌드 퍼포먼스 최적화,2022.01.17,react native#ios#pod#optimization,하이퍼커넥트,https://hyperconnect.github.io/2022/01/17/rn-ios-build-optimization.html
+모두의 Github Actions (feat. Github Enterprise) 3편 - Build Cache,2021.12.21,github actions#github-enterprise#ci,하이퍼커넥트,https://hyperconnect.github.io/2021/12/21/github-actions-for-everyone-3.html
+Global Media Management System 개발,2021.12.06,media-management-system#upload#event#edge-server,하이퍼커넥트,https://hyperconnect.github.io/2021/12/06/global-media-management-system.html
+모두의 Github Actions (feat. Github Enterprise) 2편 - 공용 CI 머신에서 Secret 관리하기,2021.11.29,github actions#github-enterprise#ci,하이퍼커넥트,https://hyperconnect.github.io/2021/11/29/github-actions-for-everyone-2.html
+모두의 Github Actions (feat. Github Enterprise) 1편 - 모두가 쓸 수 있는 패턴 만들기,2021.11.08,github actions#github-enterprise#ci,하이퍼커넥트,https://hyperconnect.github.io/2021/11/08/github-actions-for-everyone-1.html
+"Shell 없는 Container, Live 환경에서 Debugging해보기!",2021.09.15,kubernetes#bottlerocket#debug#kubectl,하이퍼커넥트,https://hyperconnect.github.io/2021/09/15/kubectl-debug-on-bottlerocket.html
+AWS EBS gp3 출시하자마자 EKS에서 사용하기,2021.07.05,kubernetes#cluster#eks#ebs#csi#gp3,하이퍼커넥트,https://hyperconnect.github.io/2021/07/05/ebs-csi-gp3-support.html
+CDC & CDC Sink Platform 개발 3편 - CDC Event Application Consuming 및 Event Stream Join의 구현,2021.06.21,cdc#change-data-capture#kafka#kafka connect#avro,하이퍼커넥트,https://hyperconnect.github.io/2021/06/21/cdc-event-application-consuming.html
+Pull Requests를 Merge 하면 자동으로 배포하기,2021.06.14,cd#github actions,하이퍼커넥트,https://hyperconnect.github.io/2021/06/14/auto-deployment.html
+회귀 단절 모형을 활용한 전후 비교 분석,2021.06.07,data-analysis#regression#econometrics,하이퍼커넥트,https://hyperconnect.github.io/2021/06/07/regression-discontinuity-in-time.html
+비용 효율적인 Click-Through Rate Prediction 모델로 하쿠나 라이브 추천시스템 구축하기,2021.04.26,machine learning#hakuna#gradient-boosting#recommendation system,하이퍼커넥트,https://hyperconnect.github.io/2021/04/26/hakuna-recsys-gb.html
+Disentangling Label Distribution for Long-tailed Visual Recognition,2021.04.05,machine learning#deep-learning,하이퍼커넥트,https://hyperconnect.github.io/2021/04/05/ailab-lade.html
+CDC & CDC Sink Platform 개발 2편 - CDC Sink Platform 개발 및 CQRS 패턴의 적용,2021.03.22,cdc#change-data-capture#kafka#kafka connect#cqrs#elasticsearch,하이퍼커넥트,https://hyperconnect.github.io/2021/03/22/cdc-sink-platform.html
+Bottlerocket in Production Kubernetes Cluster,2021.03.08,kubernetes#cluster#bottlerocket#os,하이퍼커넥트,https://hyperconnect.github.io/2021/03/08/bottlerocket-on-kubernetes.html
+A/B 테스트 자동 분석툴 개발하기,2021.02.26,data-science#a/b test#bayesian,하이퍼커넥트,https://hyperconnect.github.io/2021/02/26/auto-stats-test.html
+CDC & CDC Sink Platform 개발 1편 - CDC Platform 개발,2021.01.11,cdc#change-data-capture#kafka#kafka connect#mysql#aurora,하이퍼커넥트,https://hyperconnect.github.io/2021/01/11/cdc-platform.html
+초고성능 딥러닝 클러스터 구축하기 1편,2020.12.21,machine learning#hpc#cluster#superpod,하이퍼커넥트,https://hyperconnect.github.io/2020/12/21/deep-learning-cluster-1.html
+CRA(create-react-app) + TypeScript 환경 빌드 퍼포먼스 최적화,2020.12.14,typescript#optimization#react,하이퍼커넥트,https://hyperconnect.github.io/2020/12/14/typescript-build-optimization.html
+Few-shot text-to-speech 를 향한 여정 - Attentron,2020.11.30,machine learning#deep-learning,하이퍼커넥트,https://hyperconnect.github.io/2020/11/30/ailab-siren.html
+bigquery 저장소 최적화 진행기,2020.11.12,bigquery#gcp#gcs,하이퍼커넥트,https://hyperconnect.github.io/2020/11/12/bigquery-optimization.html
+5일 만에 Azar Production Kubernetes cluster 이전하기,2020.11.02,kubernetes#cluster#migration#kops#eks,하이퍼커넥트,https://hyperconnect.github.io/2020/11/02/cluster-migration-in-5-days.html
+PostgreSQL의 슬로우 쿼리에 대처하기,2020.08.31,postgresql#django,하이퍼커넥트,https://hyperconnect.github.io/2020/08/31/improve-slow-query.html
+Azar의 공정한 A/B test 운영 시스템 ABzar 소개,2020.08.26,data-science#a/b test,하이퍼커넥트,https://hyperconnect.github.io/2020/08/26/azar-ab-test.html
+Kubernetes에 Microservice 배포하기 3편 - Canary Deployments with Istio,2020.08.19,microservice#spinnaker#istio#canary#helm#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/08/19/microsrv-deploy-3.html
+WebRTC Library 다루기,2020.08.13,webrtc,하이퍼커넥트,https://hyperconnect.github.io/2020/08/13/webrtc-library.html
+Dagger Hilt로 안드로이드 의존성 주입 시작하기,2020.07.28,andorid#dagger#hilt#di,하이퍼커넥트,https://hyperconnect.github.io/2020/07/28/android-dagger-hilt.html
+안드로이드에 React Native 임베딩 후기,2020.07.08,andorid#rn,하이퍼커넥트,https://hyperconnect.github.io/2020/07/08/android-react-native-embed.html
+Kubernetes에 Microservice 배포하기 2편 - Pipeline 복제하기,2020.07.04,microservice#spinnaker#jenkins#helm#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/07/04/microsrv-deploy-2.html
+Azar Mirror 서버 제작기 3편 - 개발자편,2020.07.01,java#jpa#redis#mysql#microservice#mirror#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/07/01/azar-mirror-3.html
+Kubernetes에 Microservice 배포하기 1편 - 클릭 몇 번으로 배포 시스템 만들기,2020.06.13,microservice#spinnaker#jenkins#helm#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/06/13/microsrv-deploy-1.html
+Azar Mirror 서버 제작기 2편 - Istio와 함께하는 Traffic Mirroring,2020.06.02,microservice#istio#mirror#traffic#virtualservice#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/06/02/azar-mirror-2.html
+MENA(중동 및 북아프리카) 지역 서비스 개발 시 고려해야 할 문화 차이,2020.05.30,mena#arabic#tip,하이퍼커넥트,https://hyperconnect.github.io/2020/05/30/MENA-service-cautions-part1.html
+Azar Mirror 서버 제작기 1편 - 인프라 개선을 두렵지 않게 하는 테스트 환경 만들기,2020.05.15,java#jpa#redis#mysql#microservice#istio#mirror#traffic#virtualservice#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/05/15/azar-mirror-1.html
+Kubernetes 환경을 위한 자바 에이전트 개발기,2020.03.25,java#bytecode-instrument#bci#kubernetes,하이퍼커넥트,https://hyperconnect.github.io/2020/03/25/kube-agent.html
+자바 Stomp Client 성능 개선기,2020.03.24,java#kotlin#thread#netty#connection-pool#stomp,하이퍼커넥트,https://hyperconnect.github.io/2020/03/24/improve-stomp-client.html
+시계열 예측 패키지 Prophet 소개,2020.03.09,data-analysis#prophet#predict,하이퍼커넥트,https://hyperconnect.github.io/2020/03/09/prophet-package.html
+Node CPU 점유율 최적화 경험기,2020.02.11,node#node.js#cpu#optimize#profiling,하이퍼커넥트,https://hyperconnect.github.io/2020/02/11/Node-cpu-debug.html
+Kubernetes Custom AuthN + AuthZ,2019.12.17,kubernetes#kubehook#pomerium,하이퍼커넥트,https://hyperconnect.github.io/2019/12/17/kubehook.html
+흔한 RxJava Subject 오용 사례들,2019.11.18,andorid#rxjava#reactive,하이퍼커넥트,https://hyperconnect.github.io/2019/11/18/common-misuse-subject.html
+레디스와 분산 락(1/2) - 레디스를 활용한 분산 락과 안전하고 빠른 락의 구현,2019.11.15,java#redis#concurrency#distributed-lock,하이퍼커넥트,https://hyperconnect.github.io/2019/11/15/redis-distributed-lock-1.html
+Jackson 직렬화 옵션의 적절한 활용과 Jackson에 기여하기까지 (feat. 글로벌 캐싱),2019.10.28,java#serialize#json#jackson#redis#open source#spring-data-redis,하이퍼커넥트,https://hyperconnect.github.io/2019/10/28/jackson-serialize-for-global-caching.html
+앱 내 Webview 개발기,2019.10.25,webview#react#django#webpack#next.js,하이퍼커넥트,https://hyperconnect.github.io/2019/10/25/webview-history.html
+Survival Analysis (3/3),2019.10.03,data-science#customer-churn,하이퍼커넥트,https://hyperconnect.github.io/2019/10/03/survival-analysis-part3.html
+Survival Analysis (2/3),2019.08.22,data-science#customer-churn,하이퍼커넥트,https://hyperconnect.github.io/2019/08/22/survival-analysis-part2.html
+JavaScript Bundle Size 최적화 (2/2),2019.08.14,javascript#typescript#node#react#next.js#optimization,하이퍼커넥트,https://hyperconnect.github.io/2019/08/14/Optimize-webview-bundle-size-2.html
+JavaScript Bundle Size 최적화 (1/2),2019.07.29,javascript#typescript#node#react#next.js#optimization,하이퍼커넥트,https://hyperconnect.github.io/2019/07/29/Optimize-webview-bundle-size-1.html
+Survival Analysis (1/3),2019.07.16,data-science#customer-churn,하이퍼커넥트,https://hyperconnect.github.io/2019/07/16/survival-analysis-part1.html
+Google Cloud Next 2019 참관기,2019.06.28,google#cloud#conference#infra,하이퍼커넥트,https://hyperconnect.github.io/2019/06/28/google-cloud-next-2019.html
+Google I/O 2019 참관기,2019.06.17,googleio#google#conference#andorid,하이퍼커넥트,https://hyperconnect.github.io/2019/06/17/google-io-2019.html
+대규모 Cloud 환경에서 Zabbix 사용 Tip,2018.10.22,zabbix#monitoring#infra#devops,하이퍼커넥트,https://hyperconnect.github.io/2018/10/22/monitoring-cloud-with-zabbix.html
+Spring Session 으로의 마이그레이션 작업기,2018.10.21,spring#spring-session,하이퍼커넥트,https://hyperconnect.github.io/2018/10/21/spring-session-migration.html
+2018 PYCON KR 젬 줍기 배틀 후기,2018.08.28,pycon#python#coding-battle,하이퍼커넥트,https://hyperconnect.github.io/2018/08/28/gem-pick-wrap-up.html
+[최종 결과 업데이트] 젬 줍기 배틀,2018.08.18,pycon#python#coding-battle,하이퍼커넥트,https://hyperconnect.github.io/2018/08/18/gem-pick-start.html
+파이콘 한국 2018에서 만나요!,2018.08.16,pycon#python#coding-battle#conference,하이퍼커넥트,https://hyperconnect.github.io/2018/08/16/get-ready-for-pycon.html
+"하이퍼커넥트의 문샷 조직, 하이퍼X를 소개합니다",2018.07.20,hyper-x#interview,하이퍼커넥트,https://hyperconnect.github.io/2018/07/20/hyper-x-interview.html
+Tips for building fast portrait segmentation network with TensorFlow Lite,2018.07.06,english-post#machine learning#hypercut#tensorflowlite#mobile-deep-learning,하이퍼커넥트,https://hyperconnect.github.io/2018/07/06/tips-for-building-fast-portrait-segmentation-network-with-tensorflow-lite.html
+Google I/O 2018,2018.06.29,google#andorid#machine learning#conference,하이퍼커넥트,https://hyperconnect.github.io/2018/06/29/google-io.html
+Low Power Image Recognition Challenge 2018,2018.06.26,machine learning#challenge#english-post,하이퍼커넥트,https://hyperconnect.github.io/2018/06/26/lpirc-2018.html
+안드로이드 앱의 Persistent data를 제대로 암호화해 보자! (2/2),2018.06.13,andorid#tip#kotlin#cipher#security#room,하이퍼커넥트,https://hyperconnect.github.io/2018/06/13/android-secure-db-howto.html
+안드로이드 앱의 Persistent data를 제대로 암호화해 보자! (1/2),2018.06.03,andorid#tip#kotlin#cipher#security,하이퍼커넥트,https://hyperconnect.github.io/2018/06/03/android-secure-sharedpref-howto.html
+HyperCut으로 인물사진 필터를 만들었습니다,2018.04.30,machine learning#hypercut,하이퍼커넥트,https://hyperconnect.github.io/2018/04/30/hypercut.html
+"날짜 변환, 과연 그리 간단할까?",2018.03.27,andorid#tip,하이퍼커넥트,https://hyperconnect.github.io/2018/03/27/android-time-conversion.html
